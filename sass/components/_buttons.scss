@@ -1,0 +1,30 @@
+#filters{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top:29px;
+  & button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border-radius: 25px;
+    background: #FFF;
+    border: solid $gray 2px;
+    padding: 18px;
+    margin-right: 23px;
+
+    & .ico{
+      padding: 18px;
+      background: $light-blue;
+      border-radius: 28px;
+      margin: 0 15px 0 -18px;
+
+      & i{
+        color: $blue;
+        background: $light-blue;
+      }
+    }
+  }
+}
