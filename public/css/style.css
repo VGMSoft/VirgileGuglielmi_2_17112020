@@ -1,0 +1,74 @@
+body {
+  font-family: Raleway;
+  margin: 0 50px 0 50px;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("./../../public/fonts/Raleway/Raleway-VariableFont_wght.ttf") format("truetype");
+}
+#search-field {
+  display: flex;
+}
+#search-field button {
+  width: 134px;
+  height: 51px;
+  color: white;
+  background-color: #0065FC;
+  border: none;
+  border-radius: 0 15px 15px 0;
+  margin-left: -5px;
+}
+#search-field input[type=text] {
+  width: 234px;
+  height: 47px;
+  padding-left: 15px;
+  border: solid 1px #F2F2F2;
+}
+#search-field #pin {
+  padding: 15px;
+  background-color: #F2F2F2;
+  border-radius: 15px 0 0 15px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header:nth-child(2) {
+  align-self: center;
+  order: 3;
+}
+header a {
+  color: inherit;
+  text-decoration: none;
+}
+header > a {
+  align-self: center;
+  order: 3;
+  color: #0065FC;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  align-self: center;
+}
+nav a {
+  height: 100px;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+ul li a:hover {
+  border-top: solid #0065FC 3px;
+}
+
+/*# sourceMappingURL=style.css.map */
