@@ -1,0 +1,25 @@
+figure{
+  margin: 0;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 4px 4px 7px $dark-gray;
+  
+  &:hover{
+
+  }
+
+}
+
+article figure{
+  width: 30%;
+  margin-bottom: 30px;
+  padding: 5px;
+}
+
+aside figure{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}

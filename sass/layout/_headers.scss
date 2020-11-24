@@ -8,8 +8,7 @@ header{
     order: 3;
   }
   & a{
-    color: inherit;
-    text-decoration: none;;
+    @include quiet-link;
   }
   & > a{
     align-self: center;
