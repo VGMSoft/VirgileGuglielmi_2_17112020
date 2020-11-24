@@ -1,5 +1,6 @@
 body {
   font-family: Raleway;
+  margin-top: 0;
 }
 
 header, main {
@@ -108,24 +109,41 @@ aside figure {
   width: 100%;
 }
 
-header {
+#ico {
+  border-radius: 9px;
+  border: solid #F2F2F2 1px;
+  width: 14px;
+  height: 14px;
+  display: flex;
+  overflow: hidden;
+}
+#ico i {
+  color: #FFF;
+  background-color: #0065FC;
+  margin: -1px;
+}
+
+#header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 0;
 }
-header:nth-child(2) {
-  align-self: center;
-  order: 3;
+#header a {
+  color: #0065FC;
+}
+
+header {
+  margin: 0;
+  align-items: flex-start;
 }
 header a {
+  display: flex;
   color: inherit;
   text-decoration: inherit;
-}
-header > a {
-  align-self: center;
-  order: 3;
-  color: #0065FC;
-  font-weight: bold;
+  height: 50px;
+  align-items: flex-end;
+  padding: 0 25px 0 25px;
 }
 
 footer {
@@ -140,24 +158,33 @@ footer .footer-section {
 }
 
 nav {
-  display: flex;
-  align-self: center;
+  position: absolute;
+  top: 0px;
+  right: 126px;
 }
-nav a {
-  height: 100px;
-}
-
-ul {
-  margin: 0;
-  padding-left: 0;
+nav ul {
   list-style: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  margin: 0;
+  padding: 0;
 }
-ul li a:hover {
-  border-top: solid #0065FC 3px;
+nav ul li {
+  margin-top: 0;
+}
+nav ul li a:hover {
+  border-top: solid #0065FC 2px;
   color: #0065FC;
+}
+
+/*--CONTAINERS--*/
+#info {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+#info #ico {
+  margin-right: 12px;
 }
 
 #hebergement {

@@ -1,0 +1,14 @@
+
+#ico {
+
+  border-radius: 9px;
+  border: solid  #F2F2F2 1px;
+  width: 14px; height: 14px;
+  display: flex;
+  overflow: hidden;
+  & i {
+    color: #FFF;
+    background-color: #0065FC;
+    margin: -1px;
+  }
+}

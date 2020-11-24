@@ -1,3 +1,13 @@
+/*--CONTAINERS--*/
+#info{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  & #ico{
+    margin-right: 12px;
+  }
+}
+
 
 //HEBERGEMENT
 

@@ -1,19 +1,21 @@
-header{
+#header{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
-  &:nth-child(2){
-    align-self: center;
-    order: 3;
-  }
+  margin-top: 0;
   & a{
-    @include quiet-link;
-  }
-  & > a{
-    align-self: center;
-    order: 3;
     color: $blue;
-    font-weight: bold;
+  }
 }
+
+header {
+  margin: 0;
+  align-items: flex-start;
+  & a {
+    display: flex;
+    @include quiet-link;
+    height: 50px;
+    align-items: flex-end;
+    padding: 0 25px 0 25px;
+  }
 }
