@@ -1,0 +1,31 @@
+.img-containerL{
+  width: 235px;
+  height: 114px;
+  border-radius: 15px 15px 0 0;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+}
+
+article img{
+  width: 100%;
+  height: auto;
+}
+
+
+
+.img-containerS{
+  width: 127px;
+  height: 134px;
+  border-radius: 15px  0 0 15px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+aside img{
+  width: 100%;
+  height: auto;
+}
