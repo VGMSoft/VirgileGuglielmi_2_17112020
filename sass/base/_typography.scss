@@ -2,3 +2,23 @@
   font-family: "Raleway";
   src: url("./../../public/fonts/Raleway/Raleway-VariableFont_wght.ttf") format("truetype");
  }
+
+ h1, h2{
+   font-size: 16px;
+ }
+
+ h3{
+  font-size: 13px;
+ }
+
+ p{
+  font-size: 12px;
+ }
+
+ .blue{
+  color: $blue;
+ }
+
+ .gray{
+  color: $dark-gray;
+ }
