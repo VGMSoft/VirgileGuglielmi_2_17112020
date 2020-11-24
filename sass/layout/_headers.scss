@@ -1,7 +1,5 @@
 #header{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  @include flex-row-between;
   margin-top: 0;
   & a{
     color: $blue;

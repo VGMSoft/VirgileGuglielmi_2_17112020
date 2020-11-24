@@ -2,3 +2,9 @@
   color: inherit;
   text-decoration: inherit;
 }
+
+@mixin flex-row-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

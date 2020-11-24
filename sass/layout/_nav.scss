@@ -4,10 +4,9 @@ nav{
 
   & ul{
     list-style: none;
-    display:flex;
-    flex-direction: row;
     margin: 0;
-    padding: 0; 
+    padding: 0;
+    @include flex-row-between; 
 
     & li{
       margin-top: 0; 

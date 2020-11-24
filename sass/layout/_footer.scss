@@ -1,7 +1,6 @@
 footer{
   background-color: $gray;
-  display: flex;
-  justify-content: space-between;
+  @include flex-row-between;
   
   padding: 50px;
 

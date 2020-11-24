@@ -18,9 +18,7 @@ article figure{
 }
 
 aside figure{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  @include flex-row-between;
   align-items: center;
   width: 100%;
 }
