@@ -7,15 +7,12 @@
     margin-right: 12px;
   }
 }
-
-
 //HEBERGEMENT
 
 #hebergement {
   @include flex-row-between;
   margin-bottom: 65px;
 }
-
 article{
   background: $gray;
   border-radius: 15px;
@@ -23,7 +20,9 @@ article{
   & h2, h3{
     padding-left: 40px ;
     }
-  
+  & a {
+    @include quiet-link;
+  }
 } 
 
 aside {
@@ -33,19 +32,10 @@ aside {
   background: $gray;
   border-radius: 15px;
   align-items: center; 
-}
-
-article a {
-      @include quiet-link;
-}
-
-aside{
-    display: flex;
-    flex-direction: column;
-    & h2{
+  & h2{
       @include flex-row-between;
-    }
   }
+}
 
 #cards-heberg{
     display: flex;

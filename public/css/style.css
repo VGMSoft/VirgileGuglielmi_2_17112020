@@ -206,16 +206,6 @@ article {
 article h2, article h3 {
   padding-left: 40px;
 }
-
-aside {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  background: #F2F2F2;
-  border-radius: 15px;
-  align-items: center;
-}
-
 article a {
   color: inherit;
   text-decoration: inherit;
@@ -224,6 +214,10 @@ article a {
 aside {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  background: #F2F2F2;
+  border-radius: 15px;
+  align-items: center;
 }
 aside h2 {
   display: flex;
