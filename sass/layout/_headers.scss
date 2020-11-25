@@ -1,19 +1,12 @@
-#header{
-  @include flex-row-between;
-  margin-top: 0;
-  & a{
-    color: $blue;
-  }
-}
+.header {
+  display: flex;
+  align-items: center;
 
-header {
-  margin: 0;
-  align-items: flex-start;
-  & a {
-    display: flex;
-    @include quiet-link;
-    height: 50px;
-    align-items: flex-end;
-    padding: 0 25px 0 25px;
+  &__logo{
+    flex-grow: 1;
+  }
+  &__link{
+    padding: 25px 25px 0 25px;
+    color: $blue;
   }
 }
