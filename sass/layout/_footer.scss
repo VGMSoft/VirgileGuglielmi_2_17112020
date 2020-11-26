@@ -4,10 +4,15 @@
   background-color: $gray;
   margin-bottom: 0;
   padding: 50px;
+
   &__section{
-    @include quiet-list;
+    display: flex;
+    flex-direction: column;
     width: 30%;
     line-height: 2.3;
+    & ul{
+      @include quiet-list;
+    }
   }
-
 }
+

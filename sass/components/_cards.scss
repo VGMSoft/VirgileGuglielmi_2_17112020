@@ -22,7 +22,14 @@ article figure{
 
 aside figure{
   @include flex-row-between;
-  
   align-items: center;
   padding: 5px;
+  & figcaption{
+    margin-right: 15px;
+  }
+
+}
+
+.activ__cards figure{
+  max-width: 302px;
 }

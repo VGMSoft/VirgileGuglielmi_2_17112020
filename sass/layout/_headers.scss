@@ -6,9 +6,11 @@
   align-items: center;
 
   &__logo{
+    padding: 20px 0 0 0;
     flex-grow: 1;
   }
-  &__signup{
+  &__link{
+    display: block;
     padding: 25px 25px 0 25px;
     color: $blue;
     font-weight: bold;

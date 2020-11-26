@@ -1,37 +1,77 @@
 /*--CONTAINERS--*/
-.filters{
+.search{
   display: flex;
-  flex-direction: row;
-  margin-bottom: 40px;
-  &__buttons{
-    @include flex-row-between;
-    width: 50%
+  margin-bottom: 30px;
+
+  &__pin{
+    padding: 10px 15px 9px 15px;
+    background-color: $gray;
+    border-radius: 15px 0 0 15px;
   }
+
+  &__input[type="text"]{
+    width: 154px;
+    height: 35px;
+    padding-left: 13px;
+    border: solid 1px $gray;
+    font-weight: bold;
+  }
+
+  &__button{
+    width: 95px;
+    height: 39px;
+    color: white;
+    background-color: $blue;
+    border: none;
+    border-radius: 0 12px 12px 0;
+    margin-left: -5px;
+    font-weight: bold;
+  } 
 }
 
-#info{
+
+
+.filters{
+  @include flex-row-between;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  width: 68%;
+  }
+
+.info{
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-bottom: 40px;
-  & #ico{
+  
+  &__ico {
+    border-radius: 12px;
+    border: solid  #F2F2F2 1px;
+    width: 22px; height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-right: 12px;
+    color:#0065FC;
   }
 }
+
+
+
 //HEBERGEMENT
 
-#hebergement {
+.hebergement {
   @include flex-row-between;
-  flex-wrap: wrap;
-  margin-bottom: 65px;
+  margin-bottom: 35px;
 }
+
 article{
   width: 72%;
   background: $gray;
   border-radius: 15px;
   align-items: center;
   & h2, h3{
-    padding-left: 40px ;
+    padding-left: 25px ;
     }
   & a {
     @include quiet-link;
@@ -45,10 +85,10 @@ article{
   justify-content: space-around;
   background: $gray;
   border-radius: 15px;
-  align-items: center;
-
+  
   &__header{
     @include flex-row-between;
+    align-items: center;
   }
 }
 
@@ -61,16 +101,15 @@ article{
 
 // ACTIVITES
 
-.cards-activ{
-  @include flex-row-between;
-  margin-bottom: 60px;
-  height: 446px;
-  
-  &__small{
-    width: 50%;
-  }
-}
+.activ{
+  display: flex;
+  flex-direction: row;
 
-#activities h2{
-  margin-bottom: 25px;
+  &__cards{
+    @include flex-row-between;
+    margin-bottom: 60px;
+    height: 446px;
+
+    
+  }
 }

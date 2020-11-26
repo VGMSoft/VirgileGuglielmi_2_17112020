@@ -1,11 +1,8 @@
 @import "./utils/variables";
-@import "./utils/functions";
 @import "./utils/mixins";
-@import "./utils/extensions";
 @import "./base/base";
 @import "./base/typography";
 @import "./components/buttons";
-@import "./components/search";
 @import "./components/cards";
 @import "./components/icons";
 @import "./layout/headers";
@@ -14,4 +11,3 @@
 @import "./layout/containers";
 @import "./layout/form";
 @import "./layout/img";
-@import "./pages/index";

@@ -2,6 +2,8 @@
 <html lang="fr">
 	<head>
 		<title>Reservia</title><meta charset="utf-8" />
+		<meta name="description" content="Trouvez votre hébergement pour des vacances de rêve."/>
+		
 		<!--local_CSS_File-->
 		<link rel="stylesheet"
 					type="text/css"
@@ -21,60 +23,80 @@
 				<div class="header__logo"><img src="./public/images/logo/Reservia.svg" alt="Reservia"/></div>
 				
 				<ul>
-					<li><a href="#hebergement"><div class="nav__link">Hébergements</div></a></li>
-					<li><a href="#activities"><div class="nav__link">Activités</div></a></li>
+					<li><a href="#hebergement" class="nav__link">Hébergements</a></li>
+					<li><a href="#activities" class="nav__link">Activités</a></li>
 				</ul>
 
-				<div><a href="#signup"><div class="header__signup">S'inscrire</div></a></div>
+				<a href="#signup" class="header__link">S'inscrire</a>
 			</nav>
 
 		</header>
 
 		<main>
-<!-- presentation -->
-			<section id="presentation">
+<!-- Title -->
+			<section>
 				<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 				<p>En plein centre-ville ou en pleine nature</p>
 			</section>
 
 <!-- Recherche -->
-				<div id="search-field">
-					<span id="pin">
+				<div class="search">
+					<span class="search__pin">
 						<label><i class="fas fa-map-marker-alt"></i></label>
 					</span>
-					<input type="text" name="find" value="Marseille, France"/>
-					<button id="search" >Rechercher</button>
+					<input class="search__input" type="text" name="find" value="Marseille, France"/>
+					<button class="search__button" id="search" >Rechercher</button>
 				</div>
-				
+
+<!-- Filters -->
 				<section class="filters">
 					<h3>Filtres</h3>
 
-					<div class="filters__buttons">
-
 						<!-- bill_icon-->	
-						<button class="filter-button"><span class="icon-circle"><i class="fas fa-money-bill-wave fa-lg icon"></i></span>Économique</button>
+						<button class="filter">
+							<span class="filter__icon">
+								<i class="fas fa-money-bill-wave fa-lg "></i>
+							</span>
+							<span class="filter__title">Économique</span>
+						</button>
 						
 						<!-- family_icon-->
-						<button class="filter-button"><span class="icon-circle"><i class="fas fa-child fa-lg icon"></i></span>Familial</button>
+						<button class="filter">
+							<span class="filter__icon">
+								<i class="fas fa-child fa-lg"></i>
+							</span>
+							<span class="filter__title" >Familial</span>
+						</button>
 					
 						<!-- heart_icon-->
-						<button class="filter-button"><span class="icon-circle"><i class="fas fa-heart fa-lg icon"></i></span>Romantique</button>
+						<button class="filter">
+							<span class="filter__icon">
+								<i class="fas fa-heart fa-lg"></i>
+							</span>
+						<span class="filter__title">Romantique</span>
+					  </button>
 					
 						<!-- dog_icon-->
-						<button class="filter-button"><span class="icon-circle"><i class="fas fa-dog fa-lg icon"></i></span>Animaux autorisés</button>
-					</div>	
-		</section>
+						<button class="filter">
+							<span class="filter__icon">
+								<i class="fas fa-dog fa-lg"></i></span>
 				
-				<div id="info">
-					<span id="ico">
-						<i class="fas fa-info-circle"></i>
+							<span class="filter__title">Animaux autorisés</span>
+						</button>
+
+			</section>
+				
+<!-- Info -->			
+				<div class="info">
+					<span class="info__ico">
+						<i class="fas fa-info"></i>
 					</span>
 					<p>Plus de 500 logements dans cette ville</p>
 				</div>
 
 
-<!--Hébergement-->
-			<div id="hebergement">
+<!--Hébergements-->
+			<div class="hebergement">
 
 				<article>
 					<h2>Hébergements à Marseille</h2>
@@ -82,7 +104,7 @@
 						<div id="cards-heberg">
 
 						<figure>
-							<div class="img-containerL">
+							<div class="img-containerM">
 								<img src="./public/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
 								alt="[img]">
 							</div>	
@@ -99,7 +121,7 @@
 						</figure>
 
 						<figure>
-							<div class="img-containerL">
+							<div class="img-containerM">
 								<img src="./public/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
 								alt="[img]"/>
 							</div>
@@ -116,7 +138,7 @@
 						</figure>
 
 					<figure>
-						<div class="img-containerL">
+						<div class="img-containerM">
 							<img src="./public/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
 									alt="[img]">
 						</div>
@@ -133,7 +155,7 @@
 					</figure>
 
 					<figure>
-						<div class="img-containerL">
+						<div class="img-containerM">
 							<img src="./public/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
 								alt="[img]">
 						</div>
@@ -150,7 +172,7 @@
 					</figure>
 
 					<figure>
-						<div class="img-containerL">
+						<div class="img-containerM">
 							<img src="./public/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
 								alt="[img]">
 						</div>
@@ -167,7 +189,7 @@
 					</figure>
 
 					<figure>
-						<div class="img-containerL">
+						<div class="img-containerM">
 							<img src="./public/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
 								alt="[img]">
 						</div>
@@ -189,10 +211,10 @@
 
 				<aside class="aside">
 					
-						<span class="aside__header">
+						<div class="aside__header">
 							<h2>Les plus populaires</h2>
 							<i class="fas fa-chart-line"></i>
-						</span>
+						</div>
 					
 					<figure>
 						<div class="img-containerS">
@@ -250,9 +272,9 @@
 			</div>
 
 <!--Activités-->
-			<section id="activities">
+			<section class="activ">
 				<h2>Activités à Marseille</h2>
-					<div class="cards-activ">
+					<div class="activ__cards">
 					
 						<figure>
 							<div class="img-containerL">
@@ -308,22 +330,31 @@
 		</main>
 
 		<footer class="footer">
-			<ul class="footer__section">
+
+			<div class="footer__section">
 				<h3>A propos</h3>
-				<li>Fonctionnement du site</li>
-				<li>Conditions générales de vente</li>
-				<li>Données et confidentialité</li>
-			</ul>
-			<ul class="footer__section">
+				<ul>
+					<li>Fonctionnement du site</li>
+					<li>Conditions générales de vente</li>
+					<li>Données et confidentialité</li>
+				</ul>
+			</div>
+
+			<div class="footer__section">
 				<h3>Nos Hébergements</h3>
-				<li>Charte qualité</li>
-				<li>Soumettre votre hôtel</li>
-			</ul>
-			<ul class="footer__section">
+				<ul >
+					<li>Charte qualité</li>
+					<li>Soumettre votre hôtel</li>
+				</ul>
+			</div>
+
+			<div class="footer__section">
 				<h3>Assistance</h3>
-				<li>Centre d'aide</li>
-				<li>Nous contacter</li>
-			</ul>
+				<ul>
+					<li>Centre d'aide</li>
+					<li>Nous contacter</li>
+				</ul>
+			</div>
 		</footer>
 
 	</body>

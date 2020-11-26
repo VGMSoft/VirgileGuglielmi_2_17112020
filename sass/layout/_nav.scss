@@ -3,27 +3,20 @@
 ------------------------------*/
 .nav{
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  @include flex-row-between;
 
   & ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @include quiet-list;
+    @include flex-row-between;
     margin-top: 0;
     margin-bottom: 0;
   }
-
-  & li{
-    @include quiet-list;
-  }
-  
   &__link {
+    display: block;
     padding: 25px 25px 0 25px;
     &:hover{
     color: $blue;
     border-top: solid $blue 2px;
     }
   }
-}
+} 
