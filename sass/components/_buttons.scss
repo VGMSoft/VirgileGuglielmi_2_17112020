@@ -1,20 +1,12 @@
-#filter__buttons{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-
 .filter-button{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction:row;
   height:50px;
   border-radius: 25px;
   border: solid $gray 2px;
   background-color: #FFF;
-  margin-right: 24px;
   &:hover{
     background-color:$light-blue;
     border: $light-blue;

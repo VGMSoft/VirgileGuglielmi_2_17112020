@@ -37,22 +37,15 @@ p {
   color: #e5e5e5;
 }
 
-#filter__buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
 .filter-button {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: row;
   height: 50px;
   border-radius: 25px;
   border: solid #F2F2F2 2px;
   background-color: #FFF;
-  margin-right: 24px;
 }
 .filter-button:hover {
   background-color: #DEEBFF;
@@ -80,6 +73,7 @@ p {
 ------------------------------*/
 #search-field {
   display: flex;
+  margin-bottom: 30px;
 }
 #search-field button {
   width: 134px;
@@ -161,11 +155,11 @@ aside figure {
 }
 
 .footer {
+  display: flex;
   width: 100%;
   background-color: #F2F2F2;
   margin-bottom: 0;
   padding: 50px;
-  display: flex;
 }
 .footer__section {
   list-style: none;
@@ -201,14 +195,16 @@ aside figure {
 }
 
 /*--CONTAINERS--*/
-#filters {
-  margin-top: 30px;
-  margin-bottom: 40px;
+.filters {
   display: flex;
   flex-direction: row;
+  margin-bottom: 40px;
 }
-#filters h3 {
-  margin-right: 32px;
+.filters__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
 }
 
 #info {
