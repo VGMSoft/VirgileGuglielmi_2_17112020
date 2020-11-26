@@ -112,7 +112,7 @@ figure figcaption :nth-child(1) {
   font-weight: bold;
 }
 figure:hover {
-  transform: scale(1.1);
+  transform: scale(1.03);
   transition: transform 300ms ease;
 }
 
@@ -161,10 +161,11 @@ aside figure {
 }
 
 .footer {
+  width: 100%;
   background-color: #F2F2F2;
-  display: flex;
   margin-bottom: 0;
   padding: 50px;
+  display: flex;
 }
 .footer__section {
   list-style: none;
