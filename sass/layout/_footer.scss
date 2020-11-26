@@ -1,11 +1,14 @@
-footer{
+.footer{
   background-color: $gray;
-  @include flex-row-between;
+  display: flex;
+  
   margin-bottom: 0;
   padding: 50px;
 
-  & .footer-section{
-    width: 33%;
-    text-align: left;
+  &__section{
+    @include quiet-list;
+    width: 30%;
+    line-height: 2.3;
   }
+
 }

@@ -1,3 +1,20 @@
+
+.img-containerL{
+  width: 302px;
+  height: auto;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+}
+
+#activities img{
+  width: 100%;
+  height: auto;
+}
+
+
+
 .img-containerL{
   width: 235px;
   height: 114px;
@@ -26,6 +43,15 @@ article img{
 }
 
 aside img{
+  
+  width: auto;
+  height: 100%;
+
+}
+
+aside #img{
+  
   width: 100%;
   height: auto;
+
 }

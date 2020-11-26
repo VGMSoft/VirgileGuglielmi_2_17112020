@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 body {
   font-family: Raleway;
   box-sizing: border-box;
@@ -13,11 +14,9 @@ a {
   text-decoration: inherit;
 }
 
-/* Typography */
-@font-face {
-  font-family: "Raleway";
-  src: url("./../../public/fonts/Raleway/Raleway-VariableFont_wght.ttf") format("truetype");
-}
+/*------------------------------
+------------TYPOGRAPHY----------
+------------------------------*/
 h1, h2 {
   font-size: 16px;
 }
@@ -38,35 +37,47 @@ p {
   color: #e5e5e5;
 }
 
-#filters {
+#filter__buttons {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  margin-top: 29px;
-}
-#filters button {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  height: 50px;
-  border-radius: 25px;
-  background: #FFF;
-  border: solid #F2F2F2 2px;
-  padding: 18px;
-  margin-right: 23px;
-}
-#filters button .ico {
-  padding: 18px;
-  background: #DEEBFF;
-  border-radius: 28px;
-  margin: 0 15px 0 -18px;
-}
-#filters button .ico i {
-  color: #0065FC;
-  background: #DEEBFF;
+  justify-content: space-around;
 }
 
+.filter-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 50px;
+  border-radius: 25px;
+  border: solid #F2F2F2 2px;
+  background-color: #FFF;
+  margin-right: 24px;
+}
+.filter-button:hover {
+  background-color: #DEEBFF;
+  border: #DEEBFF;
+}
+
+.icon-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #DEEBFF;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  outline: none;
+  margin-left: -10px;
+}
+
+.icon {
+  color: #0065FC;
+}
+
+/*------------------------------
+-----------SEARCH BAR-----------
+------------------------------*/
 #search-field {
   display: flex;
 }
@@ -96,6 +107,9 @@ figure {
   background-color: #ffffff;
   border-radius: 15px;
   box-shadow: 2px 2px 5px #e5e5e5;
+}
+figure figcaption :nth-child(1) {
+  font-weight: bold;
 }
 figure:hover {
   transform: scale(1.1);
@@ -130,6 +144,9 @@ aside figure {
   margin: -1px 0 0 -1px;
 }
 
+/*------------------------------
+-------------HEADER-------------
+------------------------------*/
 .header {
   display: flex;
   align-items: center;
@@ -137,24 +154,27 @@ aside figure {
 .header__logo {
   flex-grow: 1;
 }
-.header__link {
+.header__signup {
   padding: 25px 25px 0 25px;
   color: #0065FC;
+  font-weight: bold;
 }
 
-footer {
+.footer {
   background-color: #F2F2F2;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   margin-bottom: 0;
   padding: 50px;
 }
-footer .footer-section {
-  width: 33%;
-  text-align: left;
+.footer__section {
+  list-style: none;
+  width: 30%;
+  line-height: 2.3;
 }
 
+/*------------------------------
+---------------NAV--------------
+------------------------------*/
 .nav {
   width: 100%;
   display: flex;
@@ -180,10 +200,21 @@ footer .footer-section {
 }
 
 /*--CONTAINERS--*/
+#filters {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+}
+#filters h3 {
+  margin-right: 32px;
+}
+
 #info {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-bottom: 40px;
 }
 #info #ico {
   margin-right: 12px;
@@ -193,10 +224,12 @@ footer .footer-section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 65px;
 }
 
 article {
+  width: 72%;
   background: #F2F2F2;
   border-radius: 15px;
   align-items: center;
@@ -209,7 +242,8 @@ article a {
   text-decoration: inherit;
 }
 
-aside {
+.aside {
+  width: 26%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -217,7 +251,7 @@ aside {
   border-radius: 15px;
   align-items: center;
 }
-aside h2 {
+.aside__header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -230,15 +264,32 @@ aside h2 {
   justify-content: space-around;
 }
 
-#activities h2 {
-  margin-bottom: 25px;
-}
-
-#cards-activ {
+.cards-activ {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 60px;
+  height: 446px;
+}
+.cards-activ__small {
+  width: 50%;
+}
+
+#activities h2 {
+  margin-bottom: 25px;
+}
+
+.img-containerL {
+  width: 302px;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+#activities img {
+  width: 100%;
+  height: auto;
 }
 
 .img-containerL {
@@ -266,6 +317,11 @@ article img {
 }
 
 aside img {
+  width: auto;
+  height: 100%;
+}
+
+aside #img {
   width: 100%;
   height: auto;
 }

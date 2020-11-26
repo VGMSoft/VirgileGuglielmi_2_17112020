@@ -1,9 +1,7 @@
-/* Typography */
-
-@font-face {
-  font-family: "Raleway";
-  src: url("./../../public/fonts/Raleway/Raleway-VariableFont_wght.ttf") format("truetype");
- }
+/*------------------------------
+------------TYPOGRAPHY----------
+------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
  h1, h2{
    font-size: 16px;

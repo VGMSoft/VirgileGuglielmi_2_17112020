@@ -8,8 +8,9 @@
   &__logo{
     flex-grow: 1;
   }
-  &__link{
+  &__signup{
     padding: 25px 25px 0 25px;
     color: $blue;
+    font-weight: bold;
   }
 }

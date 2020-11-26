@@ -1,8 +1,20 @@
 /*--CONTAINERS--*/
+#filters{
+  margin-top: 30px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  & h3{
+    margin-right: 32px;
+  }
+}
+
+
 #info{
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-bottom: 40px;
   & #ico{
     margin-right: 12px;
   }
@@ -11,9 +23,11 @@
 
 #hebergement {
   @include flex-row-between;
+  flex-wrap: wrap;
   margin-bottom: 65px;
 }
 article{
+  width: 72%;
   background: $gray;
   border-radius: 15px;
   align-items: center;
@@ -25,15 +39,17 @@ article{
   }
 } 
 
-aside {
+.aside {
+  width: 26%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   background: $gray;
   border-radius: 15px;
-  align-items: center; 
-  & h2{
-      @include flex-row-between;
+  align-items: center;
+
+  &__header{
+    @include flex-row-between;
   }
 }
 
@@ -46,11 +62,16 @@ aside {
 
 // ACTIVITES
 
-#activities h2{
-  margin-bottom: 25px;
-}
-
-#cards-activ{
+.cards-activ{
   @include flex-row-between;
   margin-bottom: 60px;
+  height: 446px;
+  
+  &__small{
+    width: 50%;
+  }
+}
+
+#activities h2{
+  margin-bottom: 25px;
 }

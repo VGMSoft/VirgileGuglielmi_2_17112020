@@ -3,6 +3,10 @@ figure{
   background-color: #ffffff;
   border-radius: 15px;
   box-shadow: 2px 2px 5px $dark-gray;
+
+  & figcaption :nth-child(1){
+    font-weight: bold;
+  }
   
   &:hover{
     transform: scale(1.1);
@@ -18,6 +22,7 @@ article figure{
 
 aside figure{
   @include flex-row-between;
+  
   align-items: center;
   padding: 5px;
 }
