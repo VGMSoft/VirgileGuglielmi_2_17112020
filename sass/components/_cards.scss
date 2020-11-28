@@ -1,4 +1,4 @@
-figure{
+.figure{
   margin: 0;
   background-color: #ffffff;
   border-radius: 15px;
@@ -13,23 +13,31 @@ figure{
     transition: transform 300ms ease;
   }
 
-}
-
-article figure{
-  margin-bottom: 30px;
+  &--heberg{
+    margin-bottom: 30px;
   padding: 5px;
-}
+  }
 
-aside figure{
-  @include flex-row-between;
-  align-items: center;
-  padding: 5px;
-  & figcaption{
-    margin-right: 15px;
+  &--pop{
+    @include flex-row-between;
+    align-items: center;
+    padding: 5px;
+    & figcaption{
+      margin-right: 40px;
+    }
+  }
+
+  &--activ{
+    spadding:0;
+    border-radius: 15px;
+    overflow: hidden;
+    & figcaption{
+      padding: 23px 20px 23px 20px;
+      font-weight: bold;
+      font-size: 12px;
+    }
   }
 
 }
 
-.activ__cards figure{
-  max-width: 302px;
-}
+

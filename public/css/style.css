@@ -71,38 +71,42 @@ p {
   border: #DEEBFF;
 }
 
-figure {
+.figure {
   margin: 0;
   background-color: #ffffff;
   border-radius: 15px;
   box-shadow: 2px 2px 5px #e5e5e5;
 }
-figure figcaption :nth-child(1) {
+.figure figcaption :nth-child(1) {
   font-weight: bold;
 }
-figure:hover {
+.figure:hover {
   transform: scale(1.03);
   transition: transform 300ms ease;
 }
-
-article figure {
+.figure--heberg {
   margin-bottom: 30px;
   padding: 5px;
 }
-
-aside figure {
+.figure--pop {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 5px;
 }
-aside figure figcaption {
-  margin-right: 15px;
+.figure--pop figcaption {
+  margin-right: 40px;
 }
-
-.activ__cards figure {
-  max-width: 302px;
+.figure--activ {
+  spadding: 0;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.figure--activ figcaption {
+  padding: 23px 20px 23px 20px;
+  font-weight: bold;
+  font-size: 12px;
 }
 
 /*------------------------------
@@ -198,11 +202,14 @@ aside figure figcaption {
 
 .filters {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap;
+  width: 70%;
+  align-content: flex-start;
+}
+.filters__buttons {
+  display: flex;
+  justify-content: space-around;
   margin-bottom: 40px;
-  width: 68%;
 }
 
 .info {
@@ -223,28 +230,28 @@ aside figure figcaption {
   color: #0065FC;
 }
 
-.hebergement {
+.heberg {
   display: flex;
-  flex-direction: row;
+  flex-wrap: row wrap;
   justify-content: space-between;
   margin-bottom: 35px;
 }
-
-article {
+.heberg__article {
   width: 72%;
   background: #F2F2F2;
   border-radius: 15px;
   align-items: center;
 }
-article h2, article h3 {
-  padding-left: 25px;
+.heberg__article h2, .heberg__article h3 {
+  padding-left: 27px;
 }
-article a {
-  color: inherit;
-  text-decoration: inherit;
+.heberg__article__cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: row wrap;
 }
-
-.aside {
+.heberg__aside {
   width: 26%;
   display: flex;
   flex-direction: column;
@@ -252,33 +259,28 @@ article a {
   background: #F2F2F2;
   border-radius: 15px;
 }
-.aside__header {
+.heberg__aside__header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-#cards-heberg {
-  display: flex;
-  flex-direction: row;
-  flex-flow: row wrap;
-  justify-content: space-around;
-}
-
 .activ {
-  display: flex;
-  flex-direction: row;
+  height: 1200px;
 }
 .activ__cards {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 60px;
-  height: 446px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+}
+.activ__cards--spliter {
+  grid-template-rows: 25% 25%;
+  grid-gap: 1em;
 }
 
-.img-containerL {
+.img__activ {
   width: 302px;
   height: auto;
   overflow: hidden;

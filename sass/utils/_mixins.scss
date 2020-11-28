@@ -14,4 +14,20 @@
   justify-content: space-between;
 }
 
+@mixin flex-row-around {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
+@mixin flex-column-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@mixin flex-column-around {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
