@@ -48,7 +48,7 @@ p {
   align-items: center;
   height: 50px;
   border-radius: 25px;
-  border: solid #F2F2F2 2px;
+  border: solid #e5e5e5 2px;
   background-color: #FFF;
   font-weight: bold;
 }
@@ -71,42 +71,18 @@ p {
   border: #DEEBFF;
 }
 
-.figure {
+.figure, .activ__cards__figure, .heberg__aside__cards__figure, .heberg__article__cards__figure {
   margin: 0;
-  background-color: #ffffff;
+  background-color: #FFF;
   border-radius: 15px;
   box-shadow: 2px 2px 5px #e5e5e5;
 }
-.figure figcaption :nth-child(1) {
+.figure figcaption :nth-child(1), .activ__cards__figure figcaption :nth-child(1), .heberg__aside__cards__figure figcaption :nth-child(1), .heberg__article__cards__figure figcaption :nth-child(1) {
   font-weight: bold;
 }
-.figure:hover {
-  transform: scale(1.03);
-  transition: transform 300ms ease;
-}
-.figure--heberg {
-  margin-bottom: 30px;
-  padding: 5px;
-}
-.figure--pop {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px;
-}
-.figure--pop figcaption {
-  margin-right: 40px;
-}
-.figure--activ {
-  spadding: 0;
-  border-radius: 15px;
-  overflow: hidden;
-}
-.figure--activ figcaption {
-  padding: 23px 20px 23px 20px;
-  font-weight: bold;
-  font-size: 12px;
+.figure:hover, .activ__cards__figure:hover, .heberg__aside__cards__figure:hover, .heberg__article__cards__figure:hover {
+  transform: scale(1.02);
+  transition: transform 300ms ease-in-out;
 }
 
 /*------------------------------
@@ -202,14 +178,12 @@ p {
 
 .filters {
   display: flex;
-  justify-content: space-between;
-  width: 70%;
-  align-content: flex-start;
+  margin-bottom: 40px;
 }
 .filters__buttons {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 40px;
+  width: 65%;
 }
 
 .info {
@@ -232,65 +206,100 @@ p {
 
 .heberg {
   display: flex;
-  flex-wrap: row wrap;
   justify-content: space-between;
   margin-bottom: 35px;
+  max-width: 100%;
 }
 .heberg__article {
-  width: 72%;
   background: #F2F2F2;
   border-radius: 15px;
-  align-items: center;
-}
-.heberg__article h2, .heberg__article h3 {
-  padding-left: 27px;
+  margin-right: 10px;
+  padding: 44px 38px 44px 38px;
+  flex-grow: 2;
+  max-width: 950px;
+  margin-right: min(2em);
 }
 .heberg__article__cards {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-flow: row wrap;
+  align-content: center;
+}
+.heberg__article__cards__figure {
+  margin-bottom: 30px;
+  padding: 5px;
 }
 .heberg__aside {
-  width: 26%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-grow: 1;
   background: #F2F2F2;
   border-radius: 15px;
+  margin-right: 10px;
+  padding: 44px 38px 44px 38px;
 }
 .heberg__aside__header {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.heberg__aside__cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.heberg__aside__cards__figure {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 5px;
+}
+.heberg__aside__cards__figure figcaption {
+  padding-left: 0 20px 0 54px;
+  max-width: 209px;
 }
 
-.activ {
-  height: 1200px;
-}
 .activ__cards {
+  max-width: 100%;
+  height: 750px;
+  margin-bottom: 63px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1em;
+  grid-template-columns: repeat(4, 25%);
+  grid-gap: 2em;
 }
-.activ__cards--spliter {
-  grid-template-rows: 25% 25%;
-  grid-gap: 1em;
+.activ__cards :nth-child(1) {
+  grid-column: 1;
+  grid-row: 1/span 2;
 }
-
-.img__activ {
-  width: 302px;
-  height: auto;
+.activ__cards :nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+}
+.activ__cards :nth-child(3) {
+  grid-column: 2;
+  grid-row: 2;
+}
+.activ__cards :nth-child(4) {
+  grid-column: 3;
+  grid-row: 1/span 2;
+}
+.activ__cards :nth-child(5) {
+  grid-column: 4;
+  grid-row: 1;
+}
+.activ__cards :nth-child(6) {
+  grid-column: 4;
+  grid-row: 2;
+}
+.activ__cards__figure {
   overflow: hidden;
-  display: flex;
-  align-items: center;
 }
-
-.activ img {
-  width: 100%;
-  height: auto;
+.activ__cards__figure figcaption {
+  height: 56px;
+  font-weight: bold;
+  padding: 23px 20px 23px 20px;
+  font-weight: bold;
+  font-size: 12px;
 }
 
 .img-containerM {

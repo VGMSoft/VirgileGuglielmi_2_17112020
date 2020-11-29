@@ -31,3 +31,10 @@
   flex-direction: column;
   justify-content: space-around;
 }
+
+@mixin gray-container {
+  background: $gray;
+  border-radius: 15px;
+  margin-right: 10px;
+  padding: 44px 38px 44px 38px;
+}
