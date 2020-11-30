@@ -7,11 +7,12 @@
   border: solid $dark-gray 2px;
   background-color: #FFF;
   font-weight: bold;
-  
+  transition: all 350ms ease-in-out;
   &__icon{
   display: flex;
   align-items: center;
   justify-content: center;
+  
   color: $blue;
   background-color:$light-blue;
   width: 50px;

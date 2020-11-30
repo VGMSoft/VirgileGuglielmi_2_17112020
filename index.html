@@ -17,35 +17,35 @@
 
 	<body>
 
-		<header class="header">
+		<header>
 
-			<nav class="nav">
-				<div class="header__logo"><img src="./public/images/logo/Reservia.svg" alt="Reservia"/></div>
+			<nav>
+				<div id="logo"><img src="./public/images/logo/Reservia.svg" alt="Reservia"/></div>
 				
 				<ul>
 					<li><a href="#hebergement" class="nav__link">Hébergements</a></li>
 					<li><a href="#activities" class="nav__link">Activités</a></li>
 				</ul>
 
-				<a href="#signup" class="header__link">S'inscrire</a>
+				<a href="#" id="signup">S'inscrire</a>
 			</nav>
 
 		</header>
 
 		<main>
 <!-- Title -->
-			<section>
+			<section class="top__section">
 				<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 				<p>En plein centre-ville ou en pleine nature</p>
 			
-
 <!-- Recherche -->
 				<div class="search">
 					<span class="search__pin">
 						<label><i class="fas fa-map-marker-alt"></i></label>
 					</span>
 					<input class="search__input" type="text" name="find" value="Marseille, France"/>
-					<button class="search__button" id="search" >Rechercher</button>
+					<button class="search__button" >Rechercher</button>
+					<button class="search__button--alt" ><i class="fas fa-search"></i></button>
 				</div>
 
 <!-- Filters -->
@@ -105,8 +105,8 @@
 
 					<div class="heberg__article__cards">
 
-						<figure class="heberg__article__cards__figure">
-							<div class="img-containerM">
+						<figure class="figure__heberg">
+							<div class="figure__heberg__img">
 								<img src="./public/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
 								alt="[img]">
 							</div>	
@@ -122,8 +122,8 @@
 							</figcaption>
 						</figure>
 
-						<figure class="heberg__article__cards__figure">
-							<div class="img-containerM">
+						<figure class="figure__heberg">
+							<div class="figure__heberg__img">
 								<img src="./public/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
 								alt="[img]"/>
 							</div>
@@ -139,8 +139,8 @@
 							</figcaption>
 						</figure>
 
-						<figure class="heberg__article__cards__figure">
-							<div class="img-containerM">
+						<figure class="figure__heberg">
+							<div class="figure__heberg__img">
 								<img src="./public/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
 										alt="[img]">
 							</div>
@@ -156,8 +156,8 @@
 							</figcaption>
 						</figure>
 
-						<figure class="heberg__article__cards__figure">
-							<div class="img-containerM">
+						<figure class="figure__heberg">
+							<div class="figure__heberg__img">
 								<img src="./public/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
 									alt="[img]">
 							</div>
@@ -173,8 +173,8 @@
 							</figcaption>
 						</figure>
 
-						<figure class="heberg__article__cards__figure">
-							<div class="img-containerM">
+						<figure class="figure__heberg">
+							<div class="figure__heberg__img">
 								<img src="./public/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
 									alt="[img]">
 							</div>
@@ -190,8 +190,8 @@
 							</figcaption>
 						</figure>
 
-						<figure class="heberg__article__cards__figure">
-							<div class="img-containerM">
+						<figure class="figure__heberg">
+							<div class="figure__heberg__img">
 								<img src="./public/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
 									alt="[img]">
 							</div>
@@ -222,8 +222,8 @@
 
 						<div class="heberg__aside__cards">
 
-							<figure class="heberg__aside__cards__figure">
-								<div class="img-containerS">
+							<figure class="figure__pop">
+								<div class="figure__pop__img">
 									<img src="./public/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
 										alt="[img]">
 								</div>
@@ -239,8 +239,8 @@
 								</figcaption>
 							</figure>
 
-							<figure class="heberg__aside__cards__figure">
-								<div class="img-containerS">
+							<figure class="figure__pop">
+								<div class="figure__pop__img">
 									<img src="./public/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
 											alt="[img]">
 								</div>
@@ -256,8 +256,8 @@
 								</figcaption>
 							</figure>
 
-							<figure class="heberg__aside__cards__figure">
-							<div class="img-containerS">
+							<figure class="figure__pop">
+							<div class="figure__pop__img">
 								<img src="./public/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
 										alt="[img]"
 										id="img">
@@ -285,33 +285,33 @@
 			<section class="activ">
 				<h2>Activités à Marseille</h2>
 
-				<article class="activ__cards">
+				<div class="activ__cards">
 				
-					<figure class="activ__cards__figure">
-						<div class="img__activ">
-						<img src="./public/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+					<figure class="figure__activ">
+						<div class="figure__activ__img">
+							<img src="./public/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
 							alt="[img]"/>
 						</div>
 						<figcaption>Vieux Port</figcaption>
 					</figure>
 
-					<figure class="activ__cards__figure">
-						<div class="img__activ">
+					<figure class="figure__activ">
+						<div class="figure__activ__img">
 							<img src="./public/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
 								alt="[img]"/>
 							</div>
 						<figcaption>Fort de Pomègues</figcaption>
 					</figure>
 
-					<figure class="activ__cards__figure">
-						<div class="img__activ">
+					<figure class="figure__activ">
+						<div class="figure__activ__img">
 							<img src="./public/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
 								alt="[img]"/>
 							</div>
 						<figcaption>&Icirc;les du Frioul</figcaption>
 					</figure>
 
-					<figure class="activ__cards__figure">
+					<figure class="figure__activ">
 						<div class="img__activ">
 							<img src="./public/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
 								alt="[img]"/>
@@ -319,7 +319,7 @@
 						<figcaption>Parc National des Calanques</figcaption>
 					</figure>
 
-					<figure class="activ__cards__figure">
+					<figure class="figure__activ">
 						<div class="img__activ">
 							<img src="./public/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
 								alt="[img]"/>
@@ -327,7 +327,7 @@
 						<figcaption>Notre-Dame-de-la-guarde</figcaption>
 					</figure>
 
-					<figure class="figure figure--activ">
+					<figure class="figure__activ">
 						<div class="img__activ">
 							<img src="./public/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
 								alt="[img]"/>
@@ -343,31 +343,32 @@
 
 		<footer class="footer">
 
-			<div class="footer__section">
+			<section>
 				<h3>A propos</h3>
 				<ul>
 					<li>Fonctionnement du site</li>
 					<li>Conditions générales de vente</li>
 					<li>Données et confidentialité</li>
 				</ul>
-			</div>
+			</section>
 
-			<div class="footer__section">
+			<section>
 				<h3>Nos Hébergements</h3>
 				<ul >
 					<li>Charte qualité</li>
 					<li>Soumettre votre hôtel</li>
 				</ul>
-			</div>
+			</section>
 
-			<div class="footer__section">
+			<section>
 				<h3>Assistance</h3>
 				<ul>
 					<li>Centre d'aide</li>
 					<li>Nous contacter</li>
 				</ul>
-			</div>
-		</footer>
+		</section>
+
+	</footer>
 
 	</body>
 

@@ -1,41 +1,65 @@
 /*--CONTAINERS--*/
-
+.top__section{
+  height: 259px;
+  margin-bottom: 40px;
+  & > p {
+    font-size: 16px;
+  }
+}
 .search{
   display: flex;
   margin-bottom: 30px;
-  
 
   &__pin{
-    padding: 10px 15px 9px 15px;
+    padding: 15px 17px 9px 18px;
     background-color: $gray;
     border-radius: 15px 0 0 15px;
   }
 
   &__input[type="text"]{
-    width: 154px; height: 35px;
+    width: 230px; height: 48px;
     padding-left: 13px;
     border: solid 1px $gray;
     font-weight: bold;
+    font-size: 16px;
   }
 
   &__button{
-    width: 95px; height: 39px;
     color: white;
     background-color: $blue;
     border: none;
     border-radius: 0 12px 12px 0;
     margin-left: -5px;
+    padding: 15px 15px 15px 15px; 
     font-weight: bold;
+    font-size: 16px;
+
+    &--alt{
+      display: none;
+      @extend .search__button;
+      border-radius: 12px;
+    }
   } 
 }
 
 .filters{
-  display: flex;
-  margin-bottom: 40px;
+  @include flex-row-between;
+  
+  flex-grow: 1;
+  margin-bottom: 20px;
+  & h3{
+    margin-right: min(2em);
+  }
   &__buttons{
     display: flex;
-    justify-content: space-around;
-    width: 65%;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-flow: wrap;
+    flex-grow: 1;
+    & > button{
+      margin-right: min(2em);
+      font-size: 16px;
+    }
   }
 }
 
@@ -43,17 +67,19 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 40px;
+  & > p {
+    font-size: 16px;
+  }
   
   &__ico {
     border-radius: 12px;
-    border: solid  #F2F2F2 1px;
+    border: solid  $dark-gray 1px;
     width: 22px; height: 22px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 12px;
-    color:#0065FC;
+    color: $blue;
   }
 }
 
@@ -62,46 +88,32 @@
 .heberg{
   display: flex;
   justify-content: space-between;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   max-width: 100%;
-
+  & > h3{
+    font-size: 20px;
+  }
   &__article{
     @include gray-container;
-    flex-grow: 2;
+    flex-grow: 3;
     max-width: 950px;
     margin-right: min(2em);
     &__cards{
       display: flex;
       justify-content: space-between;
       flex-flow: row wrap;
-      align-content: center;
-      &__figure{
-        @extend .figure;
-        margin-bottom: 30px;
-        padding: 5px;
-      }    
+      align-content: center;    
     }
   }
   
   &__aside {
-    flex-grow: 1;
     @include gray-container; 
-    &__header{
-      @include flex-row-around;
+    &__header{ 
+      @include flex-row-between;
       align-items: center;
     }
     &__cards{
       @include flex-column-between;
-      &__figure{
-        @extend .figure;
-        @include flex-row-between;
-        align-items: center;
-        padding: 5px;
-        & figcaption{
-          padding-left: 0 20px 0 54px;
-          max-width: 209px;
-        }
-      }
     }
   }
 }
@@ -111,53 +123,36 @@
 .activ{
   
   &__cards{
-    max-width: 100%;
-    height: 750px;
+    height: 600px;
     margin-bottom: 63px;
     display: grid;
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 2em;
 
     & :nth-child(1){
       grid-column: 1;
       grid-row: 1 / span 2;
     }
-
     & :nth-child(2){
       grid-column: 2;
       grid-row: 1 ;
-    }
-    
+      grid-template-columns: repeat(4, 1fr);
+    }  
     & :nth-child(3){
       grid-column: 2;
       grid-row: 2 ;
     }
-
     & :nth-child(4){
       grid-column: 3;
       grid-row: 1 / span 2;
     }
-
     & :nth-child(5){
       grid-column: 4;
       grid-row: 1 ;
     }
-
     & :nth-child(6){
       grid-column: 4;
       grid-row: 2;
-    }
-
-    &__figure{
-      @extend .figure;
-      overflow: hidden;
-      & figcaption{
-        height: 56px;
-        font-weight: bold;
-        padding: 23px 20px 23px 20px;
-        font-weight: bold;
-        font-size: 12px;
-      }
     }
   }
 }

@@ -1,14 +1,13 @@
 .footer{
   display: flex;
-  width:100%;
   background-color: $gray;
   margin-bottom: 0;
   padding: 50px;
 
-  &__section{
+  & > section{
     display: flex;
     flex-direction: column;
-    width: 30%;
+    flex-grow: 1;
     line-height: 2.3;
     & ul{
       @include quiet-list;

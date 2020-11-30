@@ -1,18 +1,39 @@
 /*------------------------------
 -------------HEADER-------------
 ------------------------------*/
-.header {
+header {
   display: flex;
   align-items: center;
 
-  &__logo{
-    padding: 20px 0 0 0;
+  & #logo {
+    padding: 35px 0 0 0;
     flex-grow: 1;
   }
-  &__link{
+
+  & nav{
+    width: 100%;
+    @include flex-row-between;
+    & ul{
+      @include quiet-list;
+      @include flex-row-between;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    &__link {
+      display: block;
+      padding: 35px 35px 0 35px;
+      &:hover{
+      color: $blue;
+      border-top: solid $blue 2px;
+      }
+    }
+  } 
+
+  & #signup {
     display: block;
-    padding: 25px 25px 0 25px;
+    padding: 35px 35px 0 35px;
     color: $blue;
-    font-weight: bold;
+    @include bold;
   }
 }
+

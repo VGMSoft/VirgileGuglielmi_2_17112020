@@ -1,5 +1,5 @@
 body {
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   box-sizing: border-box;
   margin: 0;
 }
@@ -7,11 +7,6 @@ body {
 header, main{
   margin: 0 50px 0 50px;
 }
-
-i{
-    font-family: "Font Awesome 5 Brands"; 
-}
-
 
 a{
   @include quiet-link;
