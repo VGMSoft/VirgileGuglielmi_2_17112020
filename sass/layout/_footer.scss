@@ -7,11 +7,15 @@
   & > section{
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
-    line-height: 2.3;
+    width: calc(100% / 3);
+    line-height: 2;
     
     & ul{
       @include quiet-list;
+    }
+
+    & > h3 {
+      margin: 0;
     }
   }
 }

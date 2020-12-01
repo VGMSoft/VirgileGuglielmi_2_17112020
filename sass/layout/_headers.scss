@@ -15,11 +15,12 @@ header {
     @include flex-row-between;
     & ul{
       @include quiet-list;
-      @include flex-row-between;
+      @include flex-row-around;
       margin-top: 0;
       margin-bottom: 0;
+      
     }
-    &__link {
+    & .link {
       display: block;
       padding: 35px 35px 0 35px;
       &:hover{

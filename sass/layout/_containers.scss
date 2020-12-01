@@ -9,42 +9,25 @@
 .search{
   display: flex;
   margin-bottom: 30px;
+  width: 33%;
 
-  &__pin{
+  & > label{
     padding: 15px 17px 9px 18px;
     background-color: $gray;
     border-radius: 15px 0 0 15px;
   }
-
   &__input[type="text"]{
-    width: 230px; height: 48px;
+    width: auto; height: 48px;
     padding-left: 13px;
     border: solid 1px $gray;
     font-weight: bold;
     font-size: 16px;
-  }
-
-  &__button{
-    color: white;
-    background-color: $blue;
-    border: none;
-    border-radius: 0 12px 12px 0;
-    margin-left: -5px;
-    padding: 15px 15px 15px 15px; 
-    font-weight: bold;
-    font-size: 16px;
-
-    &--alt{
-      display: none;
-      @extend .search__button;
-      border-radius: 12px;
-    }
   } 
 }
 
 .filters{
   @include flex-row-between;
-  
+  height: 500px;
   flex-grow: 1;
   margin-bottom: 20px;
   & h3{
@@ -67,6 +50,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-bottom: 50px;
   & > p {
     font-size: 16px;
   }
@@ -89,10 +73,10 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
-  max-width: 100%;
   & > h3{
     font-size: 20px;
   }
+
   &__article{
     @include gray-container;
     flex-grow: 3;
@@ -104,16 +88,30 @@
       flex-flow: row wrap;
       align-content: center;    
     }
+    & h2 {
+      margin-top: 0;
+    }
+    & h3 {
+      margin: 0;
+    }
   }
   
   &__aside {
     @include gray-container; 
     &__header{ 
       @include flex-row-between;
-      align-items: center;
+      align-items: baseline;
+      & h2 {
+      margin-top: 0;
+      }
+      & i{
+        font-size: 22px;
+      }
     }
     &__cards{
       @include flex-column-between;
+      height: 90%;
+      
     }
   }
 }
@@ -123,11 +121,12 @@
 .activ{
   
   &__cards{
-    height: 600px;
+    height: 446px;
     margin-bottom: 63px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 2em;
+    
 
     & :nth-child(1){
       grid-column: 1;

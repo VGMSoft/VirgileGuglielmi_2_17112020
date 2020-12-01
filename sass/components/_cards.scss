@@ -20,8 +20,7 @@
     padding: 5px;
     height: 200px;
     &__img{
-      width: 235px;
-      height: 114px;
+      width: 235px; height: 114px;
       border-radius: 15px 15px 0 0;
       overflow: hidden;
       display: flex;
@@ -38,21 +37,19 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    width: 345px;
-    padding: 5px; margin-bottom: 35px;
-    
-    
+    width: 90%; flex-basis: auto;
+    padding: 5px;
     &__img{
-      width: 127px;
-      height: 134px;
+      width: 127px; height: 134px;
       border-radius: 15px  0 0 15px;
       overflow: hidden;
       display: flex;
-      align-items: center;
       & > img {
         & :nth-child(-n+2){
           width: auto;
           height: 100%;
+          position: relative;
+          left:50px;
         }
         & :nth-child(3){
           width: 100%;
@@ -61,7 +58,6 @@
       }
     }
     & figcaption{
-      margin-left: min(20px);
       padding-left: 20px;
       max-width: 209px;
     }
@@ -69,29 +65,22 @@
 
   &__activ{
     @extend .figure;
-    position: relative;
     overflow: hidden;
-    display: flex;
+    @include flex-column-between;
     &__img{
       display: flex;
       align-content: center;
       align-items: center;
+      justify-content: center;
+      max-height: 75%;
       & > img {
-        height: 100%;
-        
-        & :nth-child(-3n+1){
-
-        }
+        /*& :nth-child(-3n+1){}*/
       }
     }
     & figcaption{
       background-color: #FFF;
-      height: 56px;
-      font-weight: bold;
-      padding: 23px 20px 0 20px;
-      font-size: 16px;
-      position: absolute;
-      bottom: -15px; left: 0; right: 0;
+      font-weight: bold;font-size: 16px;
+      padding: 20px;
     }
   }
 }
