@@ -1,6 +1,8 @@
 /*------------------------------
 -----------RESPONSIVE-----------
 ------------------------------*/
+
+//iPhone
 @media all and (max-width: 376px) and (orientation: portrait){
   .search {
     width: 100%;
@@ -26,8 +28,8 @@
   
 } 
 
-
-@media all and (max-width: 600px) and (orientation: portrait){
+//iPad
+@media all and (max-width: 768px) and (orientation: portrait){
   header, main{
     margin: 0;
    }

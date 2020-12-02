@@ -139,17 +139,15 @@ p {
   overflow: hidden;
   display: flex;
 }
-.figure__pop__img > img :nth-child(-n+2) {
+.figure__pop__img img :nth-of-type(-n+2) {
   width: auto;
   height: 100%;
-  position: relative;
-  left: 50px;
 }
-.figure__pop__img > img :nth-child(3) {
+.figure__pop__img img :nth-of-type(3) {
   width: 100%;
   height: auto;
 }
-.figure__pop figcaption {
+.figure__pop__img figcaption {
   padding-left: max(20px);
   max-width: 209px;
 }
@@ -421,7 +419,7 @@ header #signup {
     width: 100%;
   }
 }
-@media all and (max-width: 600px) and (orientation: portrait) {
+@media all and (max-width: 768px) and (orientation: portrait) {
   header, main {
     margin: 0;
   }
