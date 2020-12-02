@@ -1,15 +1,17 @@
 /*--CONTAINERS--*/
 .top__section{
-  height: 259px;
   margin-bottom: 40px;
+  
   & > p {
     font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 0.5;
   }
 }
 .search{
   display: flex;
   margin-bottom: 30px;
-  width: 33%;
+  width: 40%;
 
   & > label{
     padding: 15px 17px 9px 18px;
@@ -22,35 +24,35 @@
     border: solid 1px $gray;
     font-weight: bold;
     font-size: 16px;
-  } 
+  }
+  
 }
 
 .filters{
   @include flex-row-between;
-  height: 500px;
   flex-grow: 1;
+  width: 69%;
   margin-bottom: 20px;
   & h3{
     margin-right: min(2em);
   }
   &__buttons{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    @include flex-row-between;
     flex-flow: wrap;
     flex-grow: 1;
     & > button{
-      margin-right: min(2em);
+      
       font-size: 16px;
     }
   }
 }
 
+
 .info{
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   & > p {
     font-size: 16px;
   }
@@ -72,21 +74,18 @@
 .heberg{
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
-  & > h3{
-    font-size: 20px;
-  }
-
+  margin-bottom: 60px;
   &__article{
     @include gray-container;
-    flex-grow: 3;
+    flex-grow: 2;
     max-width: 950px;
     margin-right: min(2em);
+    
     &__cards{
       display: flex;
       justify-content: space-between;
       flex-flow: row wrap;
-      align-content: center;    
+      align-items: center;    
     }
     & h2 {
       margin-top: 0;
@@ -126,7 +125,6 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 2em;
-    
 
     & :nth-child(1){
       grid-column: 1;
@@ -142,6 +140,7 @@
       grid-row: 2 ;
     }
     & :nth-child(4){
+      
       grid-column: 3;
       grid-row: 1 / span 2;
     }

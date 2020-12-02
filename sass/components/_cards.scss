@@ -4,7 +4,6 @@
   border-radius: 15px;
   box-shadow: 2px 2px 5px $dark-gray;
   & figcaption{
-    display: block;
     & :nth-child(1){
       font-weight: 600;
     }
@@ -37,7 +36,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    width: 90%; flex-basis: auto;
+    width: 335px; flex-basis: auto;
     padding: 5px;
     &__img{
       width: 127px; height: 134px;
@@ -58,7 +57,7 @@
       }
     }
     & figcaption{
-      padding-left: 20px;
+      padding-left: max(20px);
       max-width: 209px;
     }
   }
@@ -66,21 +65,44 @@
   &__activ{
     @extend .figure;
     overflow: hidden;
-    @include flex-column-between;
+    
     &__img{
+      overflow: hidden;
       display: flex;
       align-content: center;
       align-items: center;
       justify-content: center;
-      max-height: 75%;
+      height: calc(100% - 55px);
       & > img {
-        /*& :nth-child(-3n+1){}*/
+        
+        & :nth-of-type(1){
+          width: auto;
+          height: 100%;
+        }
+        & :nth-of-type(2){
+
+        }
+        & :nth-of-type(3){
+
+        }
+        & :nth-of-type(4){
+
+        }
+        & :nth-of-type(5){
+
+        }
+        & :nth-of-type(6){
+          align-content: flex-start;
+          max-height: 100%;
+        }
       }
     }
     & figcaption{
+      display: block;
+      align-items: flex-end;
       background-color: #FFF;
-      font-weight: bold;font-size: 16px;
-      padding: 20px;
+      font-weight: bold; font-size: 16px;
+      padding: 20px 0 0 20px; 
     }
   }
 }

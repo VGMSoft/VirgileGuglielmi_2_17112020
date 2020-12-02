@@ -1,7 +1,33 @@
 /*------------------------------
 -----------RESPONSIVE-----------
 ------------------------------*/
-@media all and (max-width: 800px) and (orientation: portrait){
+@media all and (max-width: 376px) and (orientation: portrait){
+  .search {
+    width: 100%;
+    &__input {
+    flex-grow: 1;
+    }
+    &__button--text{
+      display: none;
+    }
+    &__button--ico{
+      display: inline-block;
+    }
+  }
+  .filters{
+    flex-direction: column;
+    flex-wrap: wrap;
+    &__buttons{
+      width: 100%;
+    }
+  }
+
+  
+  
+} 
+
+
+@media all and (max-width: 600px) and (orientation: portrait){
   header, main{
     margin: 0;
    }
@@ -13,8 +39,7 @@
       margin-top: -17px;
     }
     & ul{
-      order:3;
-      
+      order:3;      
       width: 100vw;
       padding-top: 25px;
     
@@ -36,56 +61,88 @@
 
   .top__section{
     margin: 0 20px 0 20px;
+    margin-right: 20px; margin-left: 20px;
   }
-
-  .search {
-    width: 90%;
-    &__input {
-      flex-grow: 1;
-    }
-    &__button--text{
-      display: none;
-    } 
-    &__button--ico{
-      display: inline-block;
-    }
-  }
-  
-  
 
   .filters{
     flex-direction: column;
     flex-wrap: wrap;
+    &__buttons{
+      width: 100%;
+    }
   }
+  
 
 .heberg{
   flex-direction: column;
+  
   & > article{
+    margin-right: 20px; margin-left: 20px;
+    padding: 0;
     order:2;
     background-color: #FFF;
-    & > figure {
-      width: 85%;
-    }
   }
   & > aside{
     order:1;
     border-radius: 0;
+    margin-bottom: 20px;
+  }
+}
+//
+.figure{
+  &__heberg{
+    width: 100%;
+    &__img{
+      width: 100%;
+    }
+    &__cap{
+      padding-left: 15px;
+      }
+  }
+  &__pop{
+    width: 100%;
+    
   }
 }
 
-.activ__cards{
-  grid-template-columns: 1;
-  grid-template-rows: repeat(6, 1fr);
-  & > figure{
-    grid-column: 1;
-    grid-row: 1 / span 1;
+.activ{
+
+  &__cards{
+    height: auto;
+    margin-bottom: 63px;
+    @include flex-column-between;
+  }
+}
+.figure__activ{
+  height: 190;
+  &__img{
+    overflow: hidden;
   }
 }
 
-  footer{
+footer{
+  flex-direction: column;
+  & > section{
+    width: 100%;
+    }
+  }
+}
+
+@media all and (max-width: 768px) and (orientation: portrait){
+  .search {
+    width: 100%;
+    &__input {
+    flex-grow: 1;
+    }
+  }
+
+  .filters{
+    display: flex;
     flex-direction: column;
-    & > section{
+    &__buttons{
       width: 100%;
     }
   }
+
+  
 }

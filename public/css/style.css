@@ -56,10 +56,17 @@ p {
   display: none;
 }
 
+.search > button:active {
+  background-color: #FFF;
+  color: #0065FC;
+  border: solid #0065FC 1px;
+}
+
 .filter {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 13px;
   align-items: center;
   height: 50px;
   border-radius: 25px;
@@ -93,9 +100,6 @@ p {
   border-radius: 15px;
   box-shadow: 2px 2px 5px #e5e5e5;
 }
-.figure figcaption, .figure__activ figcaption, .figure__pop figcaption, .figure__heberg figcaption {
-  display: block;
-}
 .figure figcaption :nth-child(1), .figure__activ figcaption :nth-child(1), .figure__pop figcaption :nth-child(1), .figure__heberg figcaption :nth-child(1) {
   font-weight: 600;
 }
@@ -124,7 +128,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  width: 90%;
+  width: 335px;
   flex-basis: auto;
   padding: 5px;
 }
@@ -146,30 +150,35 @@ p {
   height: auto;
 }
 .figure__pop figcaption {
-  padding-left: 20px;
+  padding-left: max(20px);
   max-width: 209px;
 }
 .figure__activ {
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 .figure__activ__img {
+  overflow: hidden;
   display: flex;
   align-content: center;
   align-items: center;
   justify-content: center;
-  max-height: 75%;
+  height: calc(100% - 55px);
 }
-.figure__activ__img > img {
-  /*& :nth-child(-3n+1){}*/
+.figure__activ__img > img :nth-of-type(1) {
+  width: auto;
+  height: 100%;
+}
+.figure__activ__img > img :nth-of-type(6) {
+  align-content: flex-start;
+  max-height: 100%;
 }
 .figure__activ figcaption {
+  display: block;
+  align-items: flex-end;
   background-color: #FFF;
   font-weight: bold;
   font-size: 16px;
-  padding: 20px;
+  padding: 20px 0 0 20px;
 }
 
 /*------------------------------
@@ -235,17 +244,18 @@ header #signup {
 
 /*--CONTAINERS--*/
 .top__section {
-  height: 259px;
   margin-bottom: 40px;
 }
 .top__section > p {
   font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 0.5;
 }
 
 .search {
   display: flex;
   margin-bottom: 30px;
-  width: 33%;
+  width: 40%;
 }
 .search > label {
   padding: 15px 17px 9px 18px;
@@ -265,8 +275,8 @@ header #signup {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 500px;
   flex-grow: 1;
+  width: 69%;
   margin-bottom: 20px;
 }
 .filters h3 {
@@ -275,12 +285,11 @@ header #signup {
 .filters__buttons {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-flow: wrap;
   flex-grow: 1;
 }
 .filters__buttons > button {
-  margin-right: min(2em);
   font-size: 16px;
 }
 
@@ -288,7 +297,7 @@ header #signup {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .info > p {
   font-size: 16px;
@@ -308,16 +317,13 @@ header #signup {
 .heberg {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
-}
-.heberg > h3 {
-  font-size: 20px;
+  margin-bottom: 60px;
 }
 .heberg__article {
   background: #F2F2F2;
   border-radius: 15px;
   padding: 44px 38px 44px 38px;
-  flex-grow: 3;
+  flex-grow: 2;
   max-width: 950px;
   margin-right: min(2em);
 }
@@ -325,7 +331,7 @@ header #signup {
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
-  align-content: center;
+  align-items: center;
 }
 .heberg__article h2 {
   margin-top: 0;
@@ -393,7 +399,29 @@ header #signup {
 /*------------------------------
 -----------RESPONSIVE-----------
 ------------------------------*/
-@media all and (max-width: 800px) and (orientation: portrait) {
+@media all and (max-width: 376px) and (orientation: portrait) {
+  .search {
+    width: 100%;
+  }
+  .search__input {
+    flex-grow: 1;
+  }
+  .search__button--text {
+    display: none;
+  }
+  .search__button--ico {
+    display: inline-block;
+  }
+
+  .filters {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .filters__buttons {
+    width: 100%;
+  }
+}
+@media all and (max-width: 600px) and (orientation: portrait) {
   header, main {
     margin: 0;
   }
@@ -426,54 +454,82 @@ header #signup {
 
   .top__section {
     margin: 0 20px 0 20px;
-  }
-
-  .search {
-    width: 90%;
-  }
-  .search__input {
-    flex-grow: 1;
-  }
-  .search__button--text {
-    display: none;
-  }
-  .search__button--ico {
-    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
   }
 
   .filters {
     flex-direction: column;
     flex-wrap: wrap;
   }
+  .filters__buttons {
+    width: 100%;
+  }
 
   .heberg {
     flex-direction: column;
   }
   .heberg > article {
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 0;
     order: 2;
     background-color: #FFF;
-  }
-  .heberg > article > figure {
-    width: 85%;
   }
   .heberg > aside {
     order: 1;
     border-radius: 0;
+    margin-bottom: 20px;
+  }
+
+  .figure__heberg {
+    width: 100%;
+  }
+  .figure__heberg__img {
+    width: 100%;
+  }
+  .figure__heberg__cap {
+    padding-left: 15px;
+  }
+  .figure__pop {
+    width: 100%;
   }
 
   .activ__cards {
-    grid-template-columns: 1;
-    grid-template-rows: repeat(6, 1fr);
+    height: auto;
+    margin-bottom: 63px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
-  .activ__cards > figure {
-    grid-column: 1;
-    grid-row: 1/span 1;
+
+  .figure__activ {
+    height: 190;
+  }
+  .figure__activ__img {
+    overflow: hidden;
   }
 
   footer {
     flex-direction: column;
   }
   footer > section {
+    width: 100%;
+  }
+}
+@media all and (max-width: 768px) and (orientation: portrait) {
+  .search {
+    width: 100%;
+  }
+  .search__input {
+    flex-grow: 1;
+  }
+
+  .filters {
+    display: flex;
+    flex-direction: column;
+  }
+  .filters__buttons {
     width: 100%;
   }
 }

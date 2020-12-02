@@ -21,13 +21,17 @@
     display: none;
   }
 }
-
+.search > button:active{
+    background-color: #FFF;
+    color: $blue;
+    border: solid $blue 1px;
+}
 
 
 
 .filter{
   @include flex-row-between;
-  
+  margin-bottom: 13px;
   align-items: center;
   height:50px;
   border-radius: 25px;
