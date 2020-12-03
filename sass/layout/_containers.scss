@@ -1,4 +1,6 @@
-/*--CONTAINERS--*/
+/*------------------------------
+------------CONTAINERS----------
+------------------------------*/
 .top__section{
   margin-bottom: 40px;
   
@@ -8,7 +10,10 @@
     line-height: 0.5;
   }
 }
+
+
 .search{
+  /*------------SEARCH-----------*/
   display: flex;
   margin-bottom: 30px;
   width: 40%;
@@ -29,6 +34,7 @@
 }
 
 .filters{
+  /*-----------FILTERS----------*/
   @include flex-row-between;
   flex-grow: 1;
   width: 69%;
@@ -49,6 +55,7 @@
 
 
 .info{
+  /*------------INFO-----------*/
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -69,9 +76,9 @@
   }
 }
 
-//HEBERGEMENT
 
 .heberg{
+  /*-----------HEBERG----------*/
   display: flex;
   justify-content: space-between;
   margin-bottom: 60px;
@@ -96,7 +103,9 @@
   }
   
   &__aside {
-    @include gray-container; 
+    /*------------POP-----------*/
+    @include gray-container;
+    padding: 35px;
     &__header{ 
       @include flex-row-between;
       align-items: baseline;
@@ -115,7 +124,6 @@
   }
 }
 
-// ACTIVITES
 
 .activ{
   

@@ -8,6 +8,17 @@
   padding-left: 0;
 }
 
+@mixin gray-container {
+  background: $gray;
+  border-radius: 15px;
+  padding: 44px 38px 44px 38px;
+}
+
+@mixin bold {
+  font-weight: 700;
+}
+
+/*-------FLEXBOX------*/
 @mixin flex-row-between {
   display: flex;
   flex-direction: row;
@@ -30,14 +41,4 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-}
-
-@mixin gray-container {
-  background: $gray;
-  border-radius: 15px;
-  padding: 44px 38px 44px 38px;
-}
-
-@mixin bold {
-  font-weight: 700;
 }

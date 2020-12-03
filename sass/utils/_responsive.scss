@@ -24,8 +24,27 @@
     }
   }
 
-  
-  
+.heberg__aside{
+  padding: 20px;
+  &__cards{
+  }
+}
+
+
+
+.figure__pop{
+  margin-bottom: 10px;
+}
+/*
+.fig__activ:nth-child(1) .activ__img img {
+  width: 100%;
+  height: auto;
+}
+.fig__activ:nth-child(4) .activ__img img {
+  width: 100%;
+  height: auto;
+}
+  */
 } 
 
 //iPad
@@ -91,7 +110,7 @@
   }
 }
 //
-.figure{
+.fig{
   &__heberg{
     width: 100%;
     &__img{
@@ -103,20 +122,20 @@
   }
   &__pop{
     width: 100%;
-    
+    margin-bottom: 10px;
   }
 }
 
 .activ{
-
+  padding: 20px;
   &__cards{
     height: auto;
     margin-bottom: 63px;
     @include flex-column-between;
   }
 }
-.figure__activ{
-  height: 190;
+.fig__activ{
+  height: 190px;
   &__img{
     overflow: hidden;
   }

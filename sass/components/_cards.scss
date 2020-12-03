@@ -1,4 +1,7 @@
-.figure{
+/*------------------------------
+--------------CARDS------------
+------------------------------*/
+.fig{
   margin: 0;
   background-color: #FFF;
   border-radius: 15px;
@@ -14,7 +17,8 @@
   }
 
   &__heberg{
-    @extend .figure;
+/*-----------HEBERG----------*/
+    @extend .fig;
     margin-bottom: 30px;
     padding: 5px;
     height: 200px;
@@ -30,73 +34,109 @@
       }
     }
   }
-
   &__pop{
-    @extend .figure;
+/*-------------POP------------*/
+    @extend .fig;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    width: 335px; flex-basis: auto;
+    width: 343px;
     padding: 5px;
     &__img{
       width: 127px; height: 134px;
       border-radius: 15px  0 0 15px;
       overflow: hidden;
-      display: flex;
+      display: flex;justify-content: center;
       & img{
-        & :nth-of-type(-n+2){
-          width: auto;
-          height: 100%;
-        }
-        & :nth-of-type(3){
-          width: 100%;
-          height:auto;
-        }
-      }
-      & figcaption{
-        padding-left: max(20px);
-        max-width: 209px;
-      }
+        width: auto;
+        height: 100%;
+      } 
+    }
+    &:last-child img{
+      width: 100%;
+      height: auto;
+    }
+    &__cap{
+      padding-left: 20px;
+      max-width: 209px;
     }
   }
 
-
-
   &__activ{
-    @extend .figure;
+/*------------ACTIV-----------*/
+    @extend .fig;
     overflow: hidden;
-    
-    &__img{
+    & .activ__img{
       overflow: hidden;
-      display: flex;
-      align-content: center;
-      align-items: center;
-      justify-content: center;
-      height: calc(100% - 55px);
-      & > img {
-        
-        & :nth-of-type(1){
+        display: flex;
+        height: calc(100% - 55px);
+    }
+    &:nth-child(1){
+      & .activ__img{
+        align-content: center;
+        align-items: flex-start;
+        justify-content: center;
+        & img{
           width: auto;
           height: 100%;
         }
-        & :nth-of-type(2){
-
-        }
-        & :nth-of-type(3){
-
-        }
-        & :nth-of-type(4){
-
-        }
-        & :nth-of-type(5){
-
-        }
-        & :nth-of-type(6){
-          align-content: flex-start;
-          max-height: 100%;
+      }
+    }
+    &:nth-child(2){
+      & .activ__img{
+        align-content: center;
+        align-items: flex-start;
+        justify-content: center;
+        & img{
+          width: 100%;
+          height: auto;
         }
       }
     }
+    &:nth-child(3){
+      & .activ__img{
+        align-content: center;
+        align-items: flex-start;
+        justify-content: center;
+        & img{
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+    &:nth-child(4){
+      & .activ__img{
+        align-content: center;
+        align-items: flex-start;
+        justify-content: center;
+        & img{
+          width: auto;
+          height: 100%;
+        }
+      }
+    }
+    &:nth-child(5){
+      & .activ__img{
+        align-content: center;
+        align-items: flex-start;
+        justify-content: center;
+        & img{
+        width: 100%;
+        height: auto;
+        }
+      }
+    }
+    &:nth-child(6){
+      & .activ__img{
+        align-content: center;
+        align-items: flex-start;
+        justify-content: center;
+        & img{
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
     & figcaption{
       display: block;
       align-items: flex-end;
