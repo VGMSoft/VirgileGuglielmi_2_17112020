@@ -2,7 +2,7 @@
 -----------RESPONSIVE-----------
 ------------------------------*/
 
-//iPhone
+//iPhone------------------------------------------------------
 @media all and (max-width: 376px) and (orientation: portrait){
   .search {
     width: 100%;
@@ -24,11 +24,7 @@
     }
   }
 
-.heberg__aside{
-  padding: 20px;
-  &__cards{
-  }
-}
+
 
 
 
@@ -47,7 +43,7 @@
   */
 } 
 
-//iPad
+//iPad--------------------------------------------------------
 @media all and (max-width: 768px) and (orientation: portrait){
   header, main{
     margin: 0;
@@ -92,78 +88,67 @@
       width: 100%;
     }
   }
-  
 
-.heberg{
-  flex-direction: column;
-  
-  & > article{
-    margin-right: 20px; margin-left: 20px;
-    padding: 0;
-    order:2;
-    background-color: #FFF;
-  }
-  & > aside{
-    order:1;
-    border-radius: 0;
-    margin-bottom: 20px;
-  }
-}
-//
-.fig{
-  &__heberg{
-    width: 100%;
-    &__img{
-      width: 100%;
-    }
-    &__cap{
-      padding-left: 15px;
-      }
-  }
-  &__pop{
-    width: 100%;
-    margin-bottom: 10px;
-  }
-}
-
-.activ{
-  padding: 20px;
-  &__cards{
-    height: auto;
-    margin-bottom: 63px;
-    @include flex-column-between;
-  }
-}
-.fig__activ{
-  height: 190px;
-  &__img{
-    overflow: hidden;
-  }
-}
-
-footer{
-  flex-direction: column;
-  & > section{
-    width: 100%;
-    }
-  }
-}
-
-@media all and (max-width: 768px) and (orientation: portrait){
   .search {
     width: 100%;
     &__input {
     flex-grow: 1;
     }
   }
-
-  .filters{
-    display: flex;
+  
+  .heberg{
     flex-direction: column;
-    &__buttons{
+    article{
+      margin-right: 20px; margin-left: 20px;
+      padding: 0;
+      order:2;
+      background-color: #FFF;
+    }
+    aside{
+      width: 80vmin;
+      order:1;
+      border-radius: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  .fig{
+    &__heberg{
       width: 100%;
+      &__img{
+        width: 100%;
+      }
+      &__cap{
+        padding-left: 15px;
+        }
+    }
+    &__pop{
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+
+  .activ{
+    padding: 20px;
+    &__cards{
+      height: auto;
+      margin-bottom: 63px;
+      @include flex-column-between;
+    }
+  }
+  .fig__activ{
+    height: 190px;
+    &__img{
+      overflow: hidden;
+    }
+  }
+
+  footer{
+    flex-direction: column;
+    & > section{
+      width: 100%;
+      }
     }
   }
 
   
-}

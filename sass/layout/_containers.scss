@@ -3,7 +3,9 @@
 ------------------------------*/
 .top__section{
   margin-bottom: 40px;
-  
+  & > h1 {
+    font-size: 22px;
+  }
   & > p {
     font-size: 16px;
     margin-bottom: 20px;
@@ -16,15 +18,15 @@
   /*------------SEARCH-----------*/
   display: flex;
   margin-bottom: 30px;
-  width: 40%;
+  width: 31%;
 
   & > label{
     padding: 15px 17px 9px 18px;
     background-color: $gray;
     border-radius: 15px 0 0 15px;
   }
-  &__input[type="text"]{
-    width: auto; height: 48px;
+  &__input {
+    width: 100%; height: 48px;
     padding-left: 13px;
     border: solid 1px $gray;
     font-weight: bold;
@@ -41,6 +43,7 @@
   margin-bottom: 20px;
   & h3{
     margin-right: min(2em);
+    font-size: 17px;
   }
   &__buttons{
     @include flex-row-between;
@@ -48,7 +51,7 @@
     flex-grow: 1;
     & > button{
       
-      font-size: 16px;
+      font-size: 17px;
     }
   }
 }
@@ -76,37 +79,27 @@
   }
 }
 
-
 .heberg{
   /*-----------HEBERG----------*/
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 60px;
-  &__article{
+  @include flex-row-between;
+  margin-bottom: 3em;
+  article{
     @include gray-container;
-    flex-grow: 2;
-    max-width: 950px;
+    width: calc(65% - 1em);
     margin-right: min(2em);
-    
-    &__cards{
-      display: flex;
-      justify-content: space-between;
+    .article__cards{
+      @include flex-row-between;
       flex-flow: row wrap;
       align-items: center;    
     }
-    & h2 {
-      margin-top: 0;
-    }
-    & h3 {
-      margin: 0;
-    }
   }
   
-  &__aside {
+  & aside {
     /*------------POP-----------*/
     @include gray-container;
-    padding: 35px;
-    &__header{ 
+    width: calc(35% - 1em);
+    //padding: 35px;
+    .aside__header{ 
       @include flex-row-between;
       align-items: baseline;
       & h2 {
@@ -116,13 +109,13 @@
         font-size: 22px;
       }
     }
-    &__cards{
+    .aside__cards{
       @include flex-column-between;
-      height: 90%;
-      
+      width: 80vw;
     }
   }
 }
+
 
 
 .activ{

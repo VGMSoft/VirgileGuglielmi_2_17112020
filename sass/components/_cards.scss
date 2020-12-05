@@ -18,7 +18,6 @@
 
   &__heberg{
 /*-----------HEBERG----------*/
-    @extend .fig;
     margin-bottom: 30px;
     padding: 5px;
     height: 200px;
@@ -33,13 +32,16 @@
       height: auto;
       }
     }
+    &__cap{
+      & :nth-child(1){
+      
+      }
+    }
   }
   &__pop{
 /*-------------POP------------*/
     @extend .fig;
-    display: flex;
-    flex-direction: row;
-    width: 343px;
+    @include flex-row-between;
     padding: 5px;
     &__img{
       width: 127px; height: 134px;
