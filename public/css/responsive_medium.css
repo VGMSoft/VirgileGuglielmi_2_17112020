@@ -8,9 +8,9 @@
   nav {
     flex-wrap: wrap;
   }
-  nav #logo {
+  #logo {
     margin-left: 5vw;
-    margin-top: -17px;
+    /*margin-top: -17px;*/
   }
   nav ul {
     order: 3;
@@ -31,10 +31,6 @@
     border-bottom: solid #0065FC 3px;
   }
 
-  .top__section {
-    margin: 1em;
-  }
-
 /*Search*/
 .search {
   width: 100%;
@@ -44,6 +40,12 @@
 }
 .search__button {
   margin-right: min(2em);
+}
+.search__button {
+  display: none;
+}
+.search__mglass {
+  display: inline-block;
 }
 
 /*Filters*/
@@ -65,22 +67,25 @@
   }
   article {
     width: 100%;
-    padding: 1em;
-    margin: 1em;
+    padding: 2em;
     padding: 0;
     order: 2;
     background-color: #FFF;
   }
+
+  .article__cards {
+    padding: 2em;
+  }
+
   aside {
     order: 1;
     padding: 1rem;
-    border-radius: 0;
-    margin-bottom: 1rem;
-    /*width: 100%;*/
+    margin: 0 0 1em 0;
+    width: auto;
   }
 
   .fig__heberg {
-    width: 90%;
+    width: 40%;
   }
   .heberg__img {
     width: 100%;
@@ -91,7 +96,7 @@
 
 /*Populaire*/
   .fig__pop {
-    width: 100%;
+    width: auto;
     margin-bottom: 10px;
   }
 /*Activites*/

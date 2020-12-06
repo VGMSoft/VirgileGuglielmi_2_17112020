@@ -1,0 +1,5 @@
+@media all and (min-width: 1400px){
+  main {
+    max-width: 1450px; margin: auto;
+  }
+}
