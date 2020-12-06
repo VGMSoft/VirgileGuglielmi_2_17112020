@@ -1,0 +1,51 @@
+@media all and (max-width: 376px) and (orientation: portrait) {
+  /*search*/
+  .search {
+    width: 100%;
+  }
+  .search__input {
+    flex-grow: 1;
+  }
+  .search__button {
+    display: none;
+  }
+  .search__mglass {
+    display: inline-block;
+  }
+
+  /*filters*/
+  .filters {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .filters__buttons {
+    width: 100%;
+  }
+ 
+  .filter {
+    margin-right: 0px;
+  }
+
+
+  .figure__pop {
+    margin-bottom: 10px;
+    width: 250px;
+  }
+
+  .heberg {
+    flex-direction: column;
+  }
+  aside {
+    width: 100%;
+    margin: 0;
+  }
+  article{
+    margin: 
+  }
+  article, .article__cards {
+    width: 100%;
+  }
+  .footer > section {
+    width: 100%;
+  }
+}
