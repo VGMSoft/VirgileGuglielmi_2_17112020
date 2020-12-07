@@ -9,6 +9,7 @@
   /*search*/
   .search {
     width: 100%;
+    margin-bottom: 2em;
   }
   .search__input {
     flex-grow: 1;
@@ -25,36 +26,44 @@
     flex-direction: column;
     flex-wrap: wrap;
   }
+  .filters h3{
+    margin-top: 0;margin-right: 0;
+  }
   .filters__buttons {
     width: 100%;
   }
  
   .filter {
-    margin-right: 0px;
+    display: flex; flex-direction: row; justify-content: flex-start; align-items: center;
   }
 
-
-  .fig__pop {
-    
-  }
-
+/*heberg*/
   .heberg {
     flex-direction: column;
   }
   .fig__heberg {
-    width: 90%; margin: auto;
+    width: 100%; margin: auto;
   }
   aside {
     width: 100%;
     border-radius: 0;
-    margin: 0;
+    margin: 0 0 3em 0;
+    ;padding: 1em;
   }
   article{
-    padding: 1em; 
+    width: calc(100% - 2em); 
+  }
+  article h2, article h3{
+    padding-left: 1em; 
   }
   article, .article__cards {
     width: 90%;
     margin: auto;
+  }
+
+
+  .footer{
+    padding: 2em;
   }
   .footer > section {
     width: 100%;

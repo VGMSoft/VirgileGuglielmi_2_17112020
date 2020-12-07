@@ -74,10 +74,10 @@ nav .link:hover {
   margin-bottom: 1em;
 }
 .top__section > h1 {
-  font-size: 22px;
+  font-size: 22px;margin: 0;
 }
 .top__section > p {
-  font-size: 16px;
+  font-size: 16px;margin-top: .5em;
 }
 
 /*-------------------------------SEARCH--------------------------------*/
@@ -145,7 +145,6 @@ nav .link:hover {
 
 .filter {
   display: flex; flex-direction: row; justify-content: flex-start; align-items: center;
-  margin: 0 1.5em .5em 0;
   height: 3em;
   border: solid #e5e5e5 2px; border-radius: 2em;
   background-color: #FFF;
@@ -199,7 +198,7 @@ figure {
 figcaption{
   padding-left: .5em;
 }
-figcaption :nth-child(1) {
+figcaption .cap__title {
   font-weight: 700;
   font-size: .9em;
 }
@@ -220,10 +219,11 @@ figure :hover {
 }
 .heberg h2 {
   margin:  0 0 1em 0;
-  font-size: 1em;
+  font-size: 1.25em;
 }
 .heberg h3 {
   margin: 1em 0 0 0;
+  font-size: 1em;
 }
 article {
   display: flex;
@@ -252,8 +252,8 @@ article {
   border-radius: 15px 15px 0 0;
   object-fit: cover;
 }
-.heberg__cap p {
-  margin: .2em;
+.fig__heberg p{
+  margin: .25em;
 }
 
 /*--------------------------Populaires----------------------*/
