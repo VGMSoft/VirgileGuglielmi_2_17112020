@@ -2,7 +2,7 @@
   main{
     padding: 0;
   }
-  .top-section {
+  .top__section {
     padding: 1em;
   }
   
@@ -34,13 +34,15 @@
   }
 
 
-  .figure__pop {
-    margin-bottom: 10px;
-    width: 250px;
+  .fig__pop {
+    
   }
 
   .heberg {
     flex-direction: column;
+  }
+  .fig__heberg {
+    width: 90%; margin: auto;
   }
   aside {
     width: 100%;

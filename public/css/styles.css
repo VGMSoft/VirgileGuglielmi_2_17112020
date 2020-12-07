@@ -69,7 +69,38 @@ nav .link:hover {
   font-weight: 700;
 }
 
-/*--------------------------SEARCH--------------------------------*/
+/*--------------------------TOP-SECTION-----------------------------*/
+.top__section {
+  margin-bottom: 1em;
+}
+.top__section > h1 {
+  font-size: 22px;
+}
+.top__section > p {
+  font-size: 16px;
+}
+
+/*-------------------------------SEARCH--------------------------------*/
+
+
+.search {
+  display: flex;
+  margin-bottom: 30px;
+  width: 31%;
+}
+.search > label {
+  padding: 1em;
+  background-color: #F2F2F2;
+  border-radius: 15px 0 0 15px;
+}
+.search__input {
+  width: 100%;
+  height: 3em;
+  padding-left: 13px;
+  border: solid 1px #F2F2F2;
+  font-weight: bold;
+  font-size: 16px;
+}
 .search__button, .search__mglass {
   color: white; background-color: #0065FC;
   border: none;
@@ -92,43 +123,12 @@ nav .link:hover {
   border: solid #0065FC 1px;
 }
 
-/*-----------------------------------FILTERS-------------------------*/
-.filter {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  margin-bottom: 13px;
-  height: 50px;
-  border: solid #e5e5e5 2px; border-radius: 2em;
-  background-color: #FFF;
-  font-weight: bold;
-  transition: all 350ms ease-in-out;
-}
-.filter__icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 15px;
-  background-color: #DEEBFF;
-  width: 50px; height: 50px;
-  border-radius: 25px;
-  margin-left: -10px;
-}
-.filter__title {
-  padding: 0 0.5em 0 0.5em;
-}
-.filter:hover {
-  background-color: #DEEBFF;
-  border: #DEEBFF;
-  cursor: pointer;
-}
+/*---------------------------FILTERS--------------------------------*/
 .filters {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-grow: 1;
-  /*width: 69%;*/
   margin-bottom: 1em;
 }
 .filters h3 {
@@ -142,190 +142,74 @@ nav .link:hover {
   flex-flow: wrap;
   flex-grow: 1;
 }
-.filter {
-  font-size: 17px;
-  margin-right: 1.5em;
-}
 
-/*--------------------------------CARDS---------------------------------*/
-.fig {
-  margin: 0;
+.filter {
+  display: flex; flex-direction: row; justify-content: flex-start; align-items: center;
+  margin: 0 1.5em .5em 0;
+  height: 3em;
+  border: solid #e5e5e5 2px; border-radius: 2em;
   background-color: #FFF;
-  border-radius: 1em;
-  box-shadow: 2px 2px 5px #e5e5e5;
+  font-size: 17px;
+  
+  font-weight: bold;
+  transition: all 350ms ease-in-out;
 }
-.fig figcaption{
-  padding-left: 1em;
+.filter__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  background-color: #DEEBFF;
+  width: 50px; height: 50px;
+  border-radius: 50%;
+  margin-left: -10px;
 }
-.fig figcaption :nth-child(1) {
-  font-weight: 600;
+.filter__title {
+  padding: 0 0.5em 0 0.5em;
 }
-.fig:hover {
-  transform: scale(1.03);
-  transition: transform 300ms ease-in-out;
+.filter:hover {
+  background-color: #DEEBFF;
+  border: #DEEBFF;
   cursor: pointer;
 }
 
-/*-----------HEBERG----------*/
-.fig__heberg {
-  margin-bottom: 1em;
-  padding: 5px;
-  width: 30%; min-width: 10em;
-}
-.heberg__img {
-  width: 100%;
-  height: 114px;
-  border-radius: 15px 15px 0 0;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-}
-.heberg__img > img {
-  width: 100%;
-  height: auto;
-}
-.heberg__cap {
-  line-height: 0.5em;
-}
-
-/*-------------POP------------*/
-.fig__pop { 
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  padding: 5px;
-}
-.pop__img {
-  width: 127px;
-  height: 134px;
-  border-radius: 1em 0 0 1em;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-}
-.pop__img img {
-  width: auto;
-  height: 100%;
-}
-.fig__pop:last-child img {
-  width: 100%;
-  height: auto;
-}
-.pop__cap {
-  padding-left: 20px;
-  max-width: 209px;
-}
-
-/*------------ACTIV-----------*/
-.fig__activ {
-  overflow: hidden;
-}
-.activ__img {
-  overflow: hidden; display: flex;
-  height: calc(100% - 55px);
-}
-.fig__activ:nth-child(1) .activ__img {
-  align-content: center; align-items: flex-start;
-  justify-content: center;
-}
-.fig__activ:nth-child(1) .activ__img img {
-  width: auto; height: 100%;
-}
-.fig__activ:nth-child(2) .activ__img {
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-}
-.fig__activ:nth-child(2) .activ__img img {
-  width: 100%; height: auto;
-}
-.fig__activ:nth-child(3) .activ__img {
-  align-content: center; align-items: flex-start; justify-content: center;
-}
-.fig__activ:nth-child(3) .activ__img img {
-  width: 100%; height: auto;
-}
-.fig__activ:nth-child(4) .activ__img {
-  align-content: center; align-items: flex-start; justify-content: center;
-}
-.fig__activ:nth-child(4) .activ__img img {
-  width: auto; height: 100%;
-}
-.fig__activ:nth-child(5) .activ__img {
-  align-content: center; align-items: flex-start; justify-content: center;
-}
-.fig__activ:nth-child(5) .activ__img img {
-  width: 100%; height: auto;
-}
-.fig__activ:nth-child(6) .activ__img {
-  align-content: center; align-items: flex-start; justify-content: center;
-}
-.fig__activ:nth-child(6) .activ__img img {
-  width: 100%; height: auto;
-}
-.fig__activ figcaption {
-  align-items: flex-end;
-  background-color: #FFF;
-  font-weight: bold;
-  font-size: 16px;
-  padding: 20px 0 0 20px;
-}
-
-/*------------------------------
-------------CONTAINERS----------
-------------------------------*/
-.top__section {
-  margin-bottom: 1em;
-}
-.top__section > h1 {
-  font-size: 22px;
-}
-.top__section > p {
-  font-size: 16px;
-  line-height: 0.5;
-}
-
-/*Search*/
-.search {
-
-  display: flex;
-  margin-bottom: 30px;
-  width: 31%;
-}
-.search > label {
-  padding: 1em;
-  background-color: #F2F2F2;
-  border-radius: 15px 0 0 15px;
-}
-.search__input {
-  width: 100%;
-  height: 3em;
-  padding-left: 13px;
-  border: solid 1px #F2F2F2;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-/*Info*/
+/*--------------------------------------Info------------------------------------*/
 .info {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  display: flex; flex-direction: row; align-items: center;
 }
 .info > p {
   font-size: 16px;
 }
 .info__ico {
-  border-radius: 12px;
+  border-radius: 50%;
   border: solid #e5e5e5 1px;
-  width: 22px;
-  height: 22px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 12px;
+  width: 1.5em; height: 1.5em;
+  display: flex; align-items: center; justify-content: center;
+  margin-right: 1em;
   color: #0065FC;
 }
+
+/*---------------------------------------CARDS---------------------------------*/
+figure {
+  margin: 0;
+  background-color: #FFF;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px #e5e5e5;
+}
+figcaption{
+  padding-left: .5em;
+}
+figcaption :nth-child(1) {
+  font-weight: 700;
+  font-size: .9em;
+}
+figure :hover {
+  transform: scale(1.03);
+  transition: transform 300ms ease-in-out;
+  cursor: pointer;
+}
+
+/*----------------------------------------HEBERG--------------------------------*/
 
 /*Hébergement*/
 .heberg {
@@ -336,6 +220,7 @@ nav .link:hover {
 }
 .heberg h2 {
   margin:  0 0 1em 0;
+  font-size: 1em;
 }
 .heberg h3 {
   margin: 1em 0 0 0;
@@ -356,8 +241,22 @@ article {
   flex-flow: row wrap;
   align-items: center;
 }
+.fig__heberg {
+  margin-bottom: 1em;
+  padding: 5px;
+  width: 30%; min-width: 10em;
+}
+.fig__heberg img{
+  width: 100%;
+  height: 114px;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+.heberg__cap p {
+  margin: .2em;
+}
 
-/*Populaires*/
+/*--------------------------Populaires----------------------*/
 aside {
   background: #F2F2F2;
   border-radius: 1em;
@@ -382,6 +281,24 @@ aside {
   justify-content: space-between;
   height: 90%;
 }
+
+.fig__pop { 
+  display: flex; flex-direction: row; justify-content: flex-start;
+  height: 27%;
+  padding: 5px;
+}
+.fig__pop img {
+  width: 110px;
+  height: 100%;
+  border-radius: 15px 0 0 15px;
+  object-fit: cover;
+}
+.pop__cap {
+  padding-left: 20px;
+  max-width: 209px;
+}
+
+/*------------------------Activities-----------------------*/
 
 /*Activites*/
 .activ__cards {
@@ -410,7 +327,29 @@ aside {
   grid-column: 4; grid-row: 2;
 }
 
-/*Footer*/
+.fig__activ {
+  overflow: hidden;
+}
+
+.fig__activ img {
+  width: 100%;
+  height: calc(100% - 3.5em);
+  border-radius: 15px 15px 0 0 ;
+  object-fit: cover;
+}
+.fig__activ:nth-child(4) img {
+  filter: brightness(125%);
+}
+
+.fig__activ figcaption {
+  align-items: flex-end;
+  background-color: #FFF;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 1em 0 0 20px;
+}
+
+/*----------------------------Footer--------------------------*/
 .footer {
   display: flex;
   background-color: #F2F2F2;
