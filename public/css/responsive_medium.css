@@ -82,9 +82,10 @@
     padding-left: 1em;
  }
   
-  .fig__heberg {
-    width: calc(50% - 1.5em);
-    margin-bottom: 1em;
+  .card__heberg {
+    width: calc(20% - 1.5em);
+    margin-bottom: 0 auto 1em auto;
+    }
   }
   .heberg__img {
     width: 100%;

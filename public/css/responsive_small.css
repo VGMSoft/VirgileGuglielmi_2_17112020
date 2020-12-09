@@ -91,6 +91,10 @@
      padding-left: 1em;
   }
 
+  .card__heberg{
+    justify-content: center;
+  }
+
   /*pop*/
   .pop__aside {
     order: 1;
