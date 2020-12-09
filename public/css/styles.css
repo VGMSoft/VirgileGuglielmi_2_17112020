@@ -131,9 +131,8 @@ nav .link:hover {
   
 }
 .filters h3 {
-  margin-right: 2em;
+  margin: auto 2em 1em 1em;
   font-size: 17px;
-  margin-bottom: 1em;
 }
 .filters__buttons {
   display: flex;
@@ -193,7 +192,7 @@ figure {
   margin: 0;
   background-color: #FFF;
   border-radius: 15px;
-  box-shadow: 2px 2px 5px #e5e5e5;
+  box-shadow: 0 0 .5em #e5e5e5;
   display: block;
 }
 figcaption{
@@ -206,9 +205,9 @@ figcaption{
 .cap__subtitle{
   font-size: .9em;
 }
-figure :hover {
+.figure :hover {
   transform: scale(1.03);
-  transition: transform 300ms ease-in-out;
+  transition: transform all 300ms ease-in-out;
   cursor: pointer;
 }
 
@@ -222,7 +221,7 @@ figure :hover {
 
 }
 .heberg h2 {
-  margin:  0 0 1em 0;
+  /*margin:  0 0 1em 0;*/
   font-size: 1.4em;
 }
 .heberg h3 {
@@ -246,9 +245,9 @@ article {
   align-items: center;
 }
 .fig__heberg {
-  margin-bottom: 1em;
+  margin: 0 auto 1em auto;
   padding: 5px;
-  width: 30%; min-width: 10em;
+  width: 30%; min-width: 12em;
 }
 .fig__heberg img{
   width: 100%;
@@ -266,6 +265,7 @@ article {
   border-radius: 1em;
   padding: 2em;
   width: calc(35% - 1em);
+  min-width: 20em;
 }
 .aside__header {
   display: flex;
@@ -291,6 +291,7 @@ article {
   height: 27%;
   padding: 5px;
   margin-bottom: .75em;
+  min-width: 16em; max-height: 8em;
 }
 .fig__pop img {
   width: 110px;
