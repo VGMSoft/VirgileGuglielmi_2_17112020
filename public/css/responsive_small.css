@@ -2,15 +2,12 @@
   main{
     padding: 0;
   }
-
   header{
     margin: 0 0 1em 0;
   }
-
   nav {
     flex-wrap: wrap;
-  }
-  
+  } 
   nav ul {
     order: 3;
     width: 100vw;
@@ -29,11 +26,9 @@
     border-top: none;
     border-bottom: solid #0065FC 3px;
   }
-
   .top__section {
     padding: 1em;
   }
-
   /*top-sect*/
   .top__section {
     padding: 1em;
@@ -57,7 +52,7 @@
     display: inline-block;
   }
 
-  /*filters*/
+  /*------------------------------FILTERS---------------------------*/
   .filters {
     flex-direction: column;
     flex-wrap: wrap;
