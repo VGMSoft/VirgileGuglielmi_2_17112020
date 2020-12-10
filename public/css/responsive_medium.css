@@ -84,9 +84,8 @@
   
   .card__heberg {
     width: calc(20% - 1.5em);
-    margin-bottom: 0 auto 1em auto;
     }
-  }
+  
   .heberg__img {
     width: 100%;
   }
@@ -95,7 +94,7 @@
 /*Populaire*/
   .fig__pop {
     width: auto;
-    margin-bottom: 1em;
+    
   }
   aside {
     order: 1;
@@ -107,6 +106,10 @@
     width: calc(100% - 2em);
     border-radius: 0;
   }
+  .card__pop:nth-of-type(-n+2){
+    margin-bottom: 1em;
+  }
+  
 /*Activites*/
   .activ {
     padding: 20px;

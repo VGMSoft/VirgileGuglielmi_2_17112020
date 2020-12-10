@@ -94,7 +94,7 @@ nav .link:hover {
   border-radius: 15px 0 0 15px;
 }
 .search__input {
-  width: 100%;
+  width: 100%; min-width:15em;
   height: 3em;
   padding-left: 13px;
   border: solid 1px #F2F2F2;
@@ -169,7 +169,6 @@ nav .link:hover {
 }
 .filter:hover {
   background-color: #DEEBFF;
-  border: #DEEBFF;
   cursor: pointer;
 }
 
@@ -208,28 +207,26 @@ figcaption{
 .card{
   display: block;
   padding: 0;
-  box-shadow: 0 0 .5em #e5e5e5;
+  box-shadow: 0 0 .7em #e5e5e5;
   border-radius: 15px;
 }
-.card :hover, .card :active{
+.card:hover, .card:active{
   transform: scale(1.02);
   transition: transform 300ms ease-in-out;
   cursor: pointer;
 }
 
-
-
 /*----------------------------------------HEBERG--------------------------------*/
-
-/*Hébergement*/
 .heberg {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 3em;
 
 }
 .heberg h2 {
   font-size: 1.4em;
+  margin-top: 0;
 }
 .heberg h3 {
   margin: 1em 0 0 0;
@@ -254,9 +251,11 @@ article {
   margin-bottom: 1em;
 }
 .card__heberg{
-  width: 30%; min-width: 15em;
+  width: 30%; min-width: 13em;
+  margin: 0 auto 1em auto;
 }
 .fig__heberg {
+  width: auto;
   padding: min(5px);
   transform: inherit;
   transition: inherit;
@@ -312,16 +311,18 @@ article {
   object-fit: cover;
 }
 .pop__cap {
-  padding-left: 20px;
+  padding-left: 1em;
   min-width: 7em;
+}
+.card__pop:nth-of-type(-n+2){
+  margin-bottom: 1em;
 }
 
 /*------------------------Activities-----------------------*/
 .activ__cards {
-  max-height: auto;
   margin-bottom: 4em;
   display: grid;
-  grid-template: repeat(2, 1fr)/ repeat(4, 1fr);
+  grid-template: repeat(2, 11em)/ repeat(4, 1fr);
   grid-gap: 2em;
 }
 .activ1 {
@@ -364,9 +365,6 @@ article {
   font-size: 16px;
   padding: 1em 0 1em .5em;
   height: auto;
-}
-.card__activ{
-max-height: 18em;
 }
 
 /*----------------------------Footer--------------------------*/

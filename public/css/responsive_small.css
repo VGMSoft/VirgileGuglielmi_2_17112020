@@ -92,7 +92,7 @@
   }
 
   .card__heberg{
-    justify-content: center;
+    width: auto;
   }
 
   /*pop*/
@@ -109,6 +109,9 @@
     height: 900px;
   }
   
+  .card__pop{
+    margin-bottom: 1em;
+  }
 
 /*activ*/
 .activ {
@@ -121,14 +124,9 @@
   flex-direction: column;
   justify-content: space-between;
 }
-
 .fig__activ {
   height: 190px;
 }
-.fig__activ__img {
-  overflow: hidden;
-}
-
   
 /*footer*/
 footer {
