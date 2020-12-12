@@ -1,9 +1,13 @@
-@media all and (max-width: 376px) and (orientation: portrait) {
+@media all and (max-width: 470px) and (orientation: portrait) {
   main{
     padding: 0;
   }
   header{
     margin: 0 0 1em 0;
+    width: auto;
+  }
+  #logo{
+    padding-left: 1.5em;
   }
   nav {
     flex-wrap: wrap;
@@ -71,23 +75,24 @@
 /*heberg*/
   .heberg {
     flex-direction: column;
+    margin-bottom: 1em;
   }
   .fig__heberg {
-    width: 100%;
-    margin-bottom: 1em;
+    width: auto;
   }
   article{
     width: calc(100% - 2em);
-    padding: 1em;
+    padding: 1em; margin: 0;
     background-color: #FFF;
     order: 2; 
   }
-  article h2, article a{
-     padding-left: 1em;
+  article h2{
+    display: inline;
+    padding-left: 1em;
   }
-
   .card__heberg{
-    width: auto;
+    width: 100%;
+    margin-bottom: 1em;
   }
 
   /*pop*/
@@ -96,39 +101,39 @@
     margin: 0 0 1em 0;
     width: auto;
     border-radius: 0;
-    margin: 0 0 2em 0;
     padding: 1em;
   }
-
   .aside-cards{
     height: 900px;
   }
-  
   .card__pop{
     margin-bottom: 1em;
   }
 
-/*activ*/
-.activ {
-  padding: 1em;
-}
-.activ__cards {
-  height: auto;
-  margin-bottom: 2em;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.fig__activ {
-  height: 190px;
-}
-  
-/*footer*/
-footer {
-  flex-direction: column;padding: 2em;
-}
-.footer > section {
-  width: 100%;
-}
+  /*activ*/
+  .activ {
+    padding: 1em;
+    margin-top: 0;
+  }
+  .activ__cards {
+    height: auto;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .fig__activ {
+    height: 190px;
+  }
+    
+  /*footer*/
+  footer {
+    flex-direction: column;padding: 2em;
+  }
+  .footer > section {
+    width: 100%;
+  }
 
 }
+
+@media all and (max-width: 425px) and (orientation: portrait) {
