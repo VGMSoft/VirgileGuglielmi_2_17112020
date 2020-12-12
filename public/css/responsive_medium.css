@@ -81,9 +81,8 @@
     padding: 1em 1em 0 1em;
   }
 
-  .heberg h2, article a{
+  .heberg__title, article a{
     padding-left: 1em;
-    
   }
   .heberg h2{
     margin: .75em 0 .75em 0;
@@ -97,10 +96,12 @@
   }
   
 
-/*Populaire*/
+  /*Populaire*/
+  .pop__title{
+    padding-left: 0;
+  }
   .fig__pop {
-    width: auto;
-    
+    width: auto; 
   }
   aside {
     order: 1;
@@ -111,9 +112,6 @@
     padding: 1em;
     width: calc(100% - 2em);
     border-radius: 0;
-  }
-  .card__pop:nth-of-type(-n+2){
-    margin-bottom: 1em;
   }
   
 /*Activites*/

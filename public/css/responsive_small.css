@@ -86,10 +86,7 @@
     background-color: #FFF;
     order: 2; 
   }
-  article h2{
-    display: inline;
-    padding-left: 1em;
-  }
+
   .card__heberg{
     width: 100%;
     margin-bottom: 1em;
@@ -138,5 +135,3 @@
   }
 
 }
-
-@media all and (max-width: 425px) and (orientation: portrait) {
