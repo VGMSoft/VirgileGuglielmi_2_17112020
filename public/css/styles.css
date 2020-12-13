@@ -83,13 +83,15 @@ nav ul {
 }
 
 /*---------------------------------------SEARCH------------------------------------*/
-.search {
+.search, .search > label, .search > button, .search > .mglass {
   display: flex;
+}
+.search {
   margin-bottom: 2em;
   width: 42%;
 }
 .search > label {
-  display: flex; justify-content: center; align-items: center;
+  justify-content: center; align-items: center;
   width: min(3em);
   background-color: #F2F2F2;
   border-radius: 1em 0 0 1em;
@@ -103,7 +105,7 @@ nav ul {
   font-size: 1.1em;
 }
 .search > button, .search > .mglass {
-  display: flex; justify-content: center; align-items: center;
+  justify-content: center; align-items: center;
   color: white; background-color: #0065FC;
   border: none;
   /*height: 3.3em;*/
@@ -112,7 +114,6 @@ nav ul {
 }
 .search > .button {
   border-radius: 0 .75em .75em 0;
-  display: flex;
   width: 8em;
 }
 .search > .mglass {
