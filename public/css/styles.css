@@ -121,7 +121,7 @@ nav ul {
   display: none;
   width: min(3em);
 }
-.search > button:active, .search > .mglass :active {
+.search > button:active, .search > .mglass:active {
   color: #0065FC; background-color: #FFF;
   border: solid #0065FC 1px;
 }
