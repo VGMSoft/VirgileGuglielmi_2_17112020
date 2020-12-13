@@ -2,6 +2,7 @@
   main{
     padding: 0;
   }
+  /*---------------------------------------nav---------------------------------*/
   header{
     margin: 0 0 1em 0;
     width: auto;
@@ -17,11 +18,9 @@
     width: 100vw;
     padding-top: 25px;
   }
-  nav ul .link {
-    display: block;
+  .link {
+    display: flex; justify-content: space-around; text-align: center;
     width: 50vw;
-    justify-content: space-around;
-    text-align: center;
     border-bottom: solid #F2F2F2 3px;
     padding: 0 0 20px 0;
   }
@@ -30,10 +29,8 @@
     border-top: none;
     border-bottom: solid #0065FC 3px;
   }
-  .top__section {
-    padding: 1em;
-  }
-  /*top-sect*/
+
+  /*-----------------------------------top-section-----------------------------*/
   .top__section {
     padding: 1em;
     margin-bottom: 0;
@@ -41,38 +38,35 @@
   #subtitle{
     margin-bottom: 2em;
   }
-  /*search*/
+  /*-----------------------------------search----------------------------------*/
   .search {
     width: 100%;
     margin-bottom: 2em;
   }
-  .search__input {
-    flex-grow: 1;
-  }
-  .search__button {
+  .search > .button {
     display: none;
   }
-  .search__mglass {
-    display: inline-block;
+  .search > .mglass {
+    display: flex;
   }
 
-  /*------------------------------FILTERS---------------------------*/
+  /*-------------------------------------filters-------------------------------*/
   .filters {
     flex-direction: column;
     flex-wrap: wrap;
   }
   .filters h3{
-    margin-top: 0;margin-right: 0;
+    margin-bottom: 1em;
   }
   .filters__buttons {
     width: 100%;
   }
- 
   .filter {
-    display: flex; flex-direction: row; justify-content: flex-start; align-items: center;
+    display: flex; flex-direction: row; justify-content: flex-start;
+    align-items: center;
   }
 
-/*heberg*/
+/*---------------------------------------heberg--------------------------------*/
   .heberg {
     flex-direction: column;
     margin-bottom: 1em;
@@ -86,13 +80,12 @@
     background-color: #FFF;
     order: 2; 
   }
-
   .card__heberg{
     width: 100%;
     margin-bottom: 1em;
   }
 
-  /*pop*/
+  /*-------------------------------------pop------------------------------------*/
   .pop__aside {
     order: 1;
     margin: 0 0 1em 0;
@@ -107,7 +100,7 @@
     margin-bottom: 1em;
   }
 
-  /*activ*/
+  /*------------------------------------activ----------------------------------*/
   .activ {
     padding: 1em;
     margin-top: 0;
@@ -126,7 +119,7 @@
     margin-bottom: 1em;
   }
     
-  /*footer*/
+  /*-------------------------------------footer--------------------------------*/
   footer {
     flex-direction: column;padding: 2em;
   }
