@@ -120,8 +120,8 @@
   }
     
   /*-------------------------------------footer--------------------------------*/
-  footer {
-    flex-direction: column;padding: 2em;
+  .footer {
+    flex-direction: column;padding: 1.5em;
   }
   .footer > section {
     width: 100%;
