@@ -90,12 +90,12 @@ nav ul {
 }
 .search > label {
   display: flex; justify-content: center; align-items: center;
-  width: min(3.5em);
+  width: min(3em);
   background-color: #F2F2F2;
   border-radius: 1em 0 0 1em;
 }
 .search > input {
-  width: auto;
+  width: 80%;
   height: 2.8em;
   padding-left: 1em;
   border: solid 1px #F2F2F2;
@@ -113,13 +113,13 @@ nav ul {
 .search > .button {
   border-radius: 0 .75em .75em 0;
   display: flex;
-  width: 10em;
+  width: 8em;
 }
 .search > .mglass {
   margin-left: -2em;
   border-radius: 1em;
   display: none;
-  width: 3em;
+  width: min(3em);
 }
 .search > button:active, .search > .mglass :active {
   color: #0065FC; background-color: #FFF;
