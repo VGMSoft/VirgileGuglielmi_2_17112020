@@ -86,17 +86,16 @@ nav ul {
 .search {
   display: flex;
   margin-bottom: 2em;
-  width: 31%;
+  width: 42%;
 }
 .search > label {
   display: flex; justify-content: center; align-items: center;
-  width: min(3em);
-  padding: 1em;
+  width: min(3.5em);
   background-color: #F2F2F2;
   border-radius: 1em 0 0 1em;
 }
 .search > input {
-  width: 100%; min-width:15em;
+  width: auto;
   height: 2.8em;
   padding-left: 1em;
   border: solid 1px #F2F2F2;
@@ -107,18 +106,20 @@ nav ul {
   display: flex; justify-content: center; align-items: center;
   color: white; background-color: #0065FC;
   border: none;
-  margin-left: -5px; padding: 1em;
+  height: 3.3em;
   font-weight: bold;
   font-size: 1em;
 }
 .search > .button {
   border-radius: 0 .75em .75em 0;
   display: flex;
+  width: 10em;
 }
 .search > .mglass {
   margin-left: -2em;
   border-radius: 1em;
   display: none;
+  width: 3em;
 }
 .search > button:active, .search > .mglass :active {
   color: #0065FC; background-color: #FFF;
