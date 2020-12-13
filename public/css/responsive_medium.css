@@ -20,7 +20,7 @@
     width: 100vw;
     padding-top: 25px;
   }
-  ul li {
+  .link {
     display: flex; justify-content: space-around;
     width: 50%;
     text-align: center;
