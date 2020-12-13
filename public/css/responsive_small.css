@@ -43,8 +43,12 @@
     width: 100%;
     margin-bottom: 2em;
   }
+  .search > input {
+    border-radius: 0;
+  }
   .search > .button {
     display: none;
+    height: 3em;
   }
   .search > .mglass {
     display: flex;
