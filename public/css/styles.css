@@ -113,7 +113,7 @@ nav ul {
 .search > .button {
   border-radius: 0 .75em .75em 0;
   display: flex;
-  width: 8em; height: 2.8em;
+  width: 8em;
 }
 .search > .mglass {
   margin-left: -2em;

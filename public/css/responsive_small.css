@@ -48,7 +48,7 @@
   }
   .search > .button {
     display: none;
-    height: 3em;
+    height: 100%;
   }
   .search > .mglass {
     display: flex;
