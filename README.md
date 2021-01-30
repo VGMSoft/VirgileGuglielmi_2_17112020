@@ -5,7 +5,10 @@
   </a>
 </p>
 
-> Intégration de la maquette d'un site de réservation d'hébergements
+> Intégration de la maquette d'un site de réservation d'hébergements.
+
+<img align="center" src="./snapshot.png" alt="Snapshot homepage"/>
+<span align="center">Reservia homegage</span>
 
 ### 🏠 [Homepage](https://github.com/VGMSoft/VirgileGuglielmi_2_17112020)
 
