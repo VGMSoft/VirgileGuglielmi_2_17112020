@@ -1,15 +1,15 @@
-
 /*iPad*/
-@media all and (max-width: 971px) and (min-width: 470px){
-  header, main {
+@media all and (max-width: 971px) and (min-width: 470px) {
+  header,
+  main {
     margin: 0;
   }
-  main{
+  main {
     padding: 0;
   }
 
   /*----------------------------------nav--------------------------------------*/
-  #logo{
+  #logo {
     padding-left: 1em;
   }
   nav {
@@ -21,16 +21,17 @@
     padding-top: 25px;
   }
   .link {
-    display: flex; justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
     width: 50%;
     text-align: center;
-    border-bottom: solid #F2F2F2 3px;
+    border-bottom: solid #f2f2f2 3px;
     padding-bottom: 1.3em;
   }
   .link:hover {
-    color: #0065FC;
+    color: #0065fc;
     border-top: none;
-    border-bottom: solid #0065FC 3px;
+    border-bottom: solid #0065fc 3px;
   }
 
   /*---------------------------------top-section-----------------------------------*/
@@ -58,7 +59,7 @@
     width: 100%;
   }
 
-/*-----------------------------------------Hebergement-------------------------------*/
+  /*-----------------------------------------Hebergement-------------------------------*/
   .heberg {
     flex-direction: column;
     margin: 0;
@@ -67,70 +68,72 @@
     width: 100%;
     padding: 2em;
     order: 2;
-    background-color: #FFF;
+    background-color: #fff;
   }
   .article__cards {
     padding: 1em 1em 0 1em;
   }
-  .heberg__title, #plus{
+  .heberg__title,
+  #plus {
     padding-left: 1em;
   }
   .heberg__article {
     padding: 0;
   }
-  .heberg h2{
-    margin: .75em 0 .75em 0;
+  .heberg h2 {
+    margin: 0.75em 0 0.75em 0;
   }
   .heberg__img {
     width: 100%;
   }
-  .card__heberg{
+  .card__heberg {
     width: 47%;
   }
-  
+
   /*----------------------------------Populaire------------------------------------*/
-  .pop__title{
+  .pop__title {
     padding-left: 0;
   }
   .fig__pop {
-    width: auto; 
+    width: auto;
   }
-  .pop__aside{
+  .pop__aside {
     order: 1;
     margin-bottom: 1em;
     padding: 1em;
     width: calc(100% - 2em);
     border-radius: 0;
   }
-  
-/*-------------------------------------Activites-----------------------------------*/
+
+  /*-------------------------------------Activites-----------------------------------*/
   .activ {
-    padding: 20px; margin-top: 1.5em;
+    padding: 20px;
+    margin-top: 1.5em;
   }
   .activ__cards {
     height: auto;
     margin-bottom: 2em;
-    grid-template: repeat(3, 13em)/ repeat(2, 1fr);
+    grid-template: repeat(3, 13em) / repeat(2, 1fr);
     grid-gap: 2em;
   }
-    .activ__cards :nth-child(1) {
-      grid-area: 1/1;
-    }
-    .activ__cards :nth-child(2) {
-      grid-area: 1/2;
-    }
-    .activ__cards :nth-child(3) {
-      grid-area: 2/1;
-    }
-    .activ__cards :nth-child(4) {
-      grid-area: 2/2;
-    }
-    .activ__cards :nth-child(5) {
-      grid-area: 3/1;
-    }
-    .activ__cards :nth-child(6) {
-      grid-area: 3/2;
-    }
+  .activ__cards :nth-child(1) {
+    grid-area: 1/1;
+  }
+  .activ__cards :nth-child(2) {
+    grid-area: 1/2;
+  }
+  .activ__cards :nth-child(3) {
+    grid-area: 2/1;
+  }
+  .activ__cards :nth-child(4) {
+    grid-area: 2/2;
+  }
+  .activ__cards :nth-child(5) {
+    grid-area: 3/1;
+  }
+  .activ__cards :nth-child(6) {
+    grid-area: 3/2;
+  }
   /*------------------------------------footer-------------------------------------*/
   footer {
     flex-direction: column;

@@ -1,33 +1,36 @@
 @media all and (max-width: 470px) and (orientation: portrait) {
-  main{
+  main {
     padding: 0;
   }
   /*---------------------------------------nav---------------------------------*/
-  header{
+  header {
     margin: 0 0 1em 0;
     width: auto;
   }
-  #logo{
+  #logo {
     padding-left: 1.5em;
   }
   nav {
     flex-wrap: wrap;
-  } 
+  }
   nav ul {
     order: 3;
     width: 100vw;
     padding-top: 25px;
   }
   .link {
-    display: flex; justify-content: space-around; text-align: center;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
     width: 50vw;
-    border-bottom: solid #F2F2F2 3px;
+    border-bottom: solid #f2f2f2 3px;
     padding: 0 0 20px 0;
   }
-  nav ul .link:hover, nav ul .link:active {
-    color: #0065FC;
+  nav ul .link:hover,
+  nav ul .link:active {
+    color: #0065fc;
     border-top: none;
-    border-bottom: solid #0065FC 3px;
+    border-bottom: solid #0065fc 3px;
   }
 
   /*-----------------------------------top-section-----------------------------*/
@@ -35,7 +38,7 @@
     padding: 1em;
     margin-bottom: 0;
   }
-  #subtitle{
+  #subtitle {
     margin-bottom: 2em;
   }
   /*-----------------------------------search----------------------------------*/
@@ -59,18 +62,20 @@
     flex-direction: column;
     flex-wrap: wrap;
   }
-  .filters h3{
+  .filters h3 {
     margin-bottom: 1em;
   }
   .filters__buttons {
     width: 100%;
   }
   .filter {
-    display: flex; flex-direction: row; justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
   }
 
-/*---------------------------------------heberg--------------------------------*/
+  /*---------------------------------------heberg--------------------------------*/
   .heberg {
     flex-direction: column;
     margin-bottom: 1em;
@@ -78,13 +83,14 @@
   .fig__heberg {
     width: auto;
   }
-  article{
+  article {
     width: calc(100% - 2em);
-    padding: 1em; margin: 0;
-    background-color: #FFF;
-    order: 2; 
+    padding: 1em;
+    margin: 0;
+    background-color: #fff;
+    order: 2;
   }
-  .card__heberg{
+  .card__heberg {
     width: 100%;
     margin-bottom: 1em;
   }
@@ -97,10 +103,10 @@
     border-radius: 0;
     padding: 1em;
   }
-  .aside-cards{
+  .aside-cards {
     height: 900px;
   }
-  .card__pop{
+  .card__pop {
     margin-bottom: 1em;
   }
 
@@ -119,16 +125,16 @@
   .fig__activ {
     height: 190px;
   }
-  .card__activ{
+  .card__activ {
     margin-bottom: 1em;
   }
-    
+
   /*-------------------------------------footer--------------------------------*/
   .footer {
-    flex-direction: column;padding: 1.5em;
+    flex-direction: column;
+    padding: 1.5em;
   }
   .footer > section {
     width: 100%;
   }
-
 }
